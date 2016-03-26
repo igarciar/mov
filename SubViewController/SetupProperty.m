@@ -823,13 +823,11 @@
         if(chooseSetupTimer == 1){
             _currentPeripheral.timerOnHour = [pickerView selectedRowInComponent:kHourComponent];
             _currentPeripheral.timerOnMinute = [pickerView selectedRowInComponent:kMinuteComponent];
-            str = [[NSString alloc]initWithFormat:@"%d:%02d",_currentPeripheral.timerOnHour, _currentPeripheral.timerOnMinute ];
             
         }
         else if(chooseSetupTimer == 2){
             _currentPeripheral.timerOffHour = [pickerView selectedRowInComponent:kHourComponent];
             _currentPeripheral.timerOffMinute = [pickerView selectedRowInComponent:kMinuteComponent];
-            str = [[NSString alloc]initWithFormat:@"%d:%02d",_currentPeripheral.timerOffHour, _currentPeripheral.timerOffMinute ];
             
         }
         nPeripheralStateChange  // 监视数据的变更

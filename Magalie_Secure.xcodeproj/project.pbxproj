@@ -761,9 +761,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		631982A4171510F400E334A3 /* finder_fukang */ = {
+		631982A4171510F400E334A3 /* Magalie_Secure */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 631982C8171510F400E334A3 /* Build configuration list for PBXNativeTarget "finder_fukang" */;
+			buildConfigurationList = 631982C8171510F400E334A3 /* Build configuration list for PBXNativeTarget "Magalie_Secure" */;
 			buildPhases = (
 				631982A1171510F400E334A3 /* Sources */,
 				631982A2171510F400E334A3 /* Frameworks */,
@@ -773,7 +773,7 @@
 			);
 			dependencies = (
 			);
-			name = finder_fukang;
+			name = Magalie_Secure;
 			productName = finder;
 			productReference = 631982A5171510F400E334A3 /* MAGALIE_SECURE.app */;
 			productType = "com.apple.product-type.application";
@@ -786,14 +786,14 @@
 			attributes = {
 				CLASSPREFIX = finder;
 				LastUpgradeCheck = 0710;
-				ORGANIZATIONNAME = Hoblack;
+				ORGANIZATIONNAME = Magalie;
 				TargetAttributes = {
 					631982A4171510F400E334A3 = {
 						DevelopmentTeam = 8GFTGLBU6Y;
 					};
 				};
 			};
-			buildConfigurationList = 631982A0171510F400E334A3 /* Build configuration list for PBXProject "finder_fukang" */;
+			buildConfigurationList = 631982A0171510F400E334A3 /* Build configuration list for PBXProject "Magalie_Secure" */;
 			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -809,7 +809,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				631982A4171510F400E334A3 /* finder_fukang */,
+				631982A4171510F400E334A3 /* Magalie_Secure */,
 			);
 		};
 /* End PBXProject section */
@@ -1080,8 +1080,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "finder/MAGALIE_SECURE-Prefix.pch";
 				INFOPLIST_FILE = "finder/MAGALIE-SECURE-Info.plist";
@@ -1092,7 +1092,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.igarcia.ble.magalie;
 				PRODUCT_NAME = MAGALIE_SECURE;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b44f3c58-5a13-49f5-b2cb-253e197748d9";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "b44f3c58-5a13-49f5-b2cb-253e197748d9";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1106,8 +1106,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "finder/MAGALIE_SECURE-Prefix.pch";
 				INFOPLIST_FILE = "finder/MAGALIE-SECURE-Info.plist";
@@ -1118,7 +1118,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.igarcia.ble.magalie;
 				PRODUCT_NAME = MAGALIE_SECURE;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "b44f3c58-5a13-49f5-b2cb-253e197748d9";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "b44f3c58-5a13-49f5-b2cb-253e197748d9";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1130,7 +1130,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		631982A0171510F400E334A3 /* Build configuration list for PBXProject "finder_fukang" */ = {
+		631982A0171510F400E334A3 /* Build configuration list for PBXProject "Magalie_Secure" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				631982C6171510F400E334A3 /* Debug */,
@@ -1139,7 +1139,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		631982C8171510F400E334A3 /* Build configuration list for PBXNativeTarget "finder_fukang" */ = {
+		631982C8171510F400E334A3 /* Build configuration list for PBXNativeTarget "Magalie_Secure" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				631982C9171510F400E334A3 /* Debug */,

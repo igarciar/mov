@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "631982A4171510F400E334A3"
                BuildableName = "MAGALIE_SECURE.app"
-               BlueprintName = "finder_fukang"
-               ReferencedContainer = "container:finder_fukang.xcodeproj">
+               BlueprintName = "Magalie_Secure"
+               ReferencedContainer = "container:Magalie_Secure.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,15 +34,15 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "631982A4171510F400E334A3"
             BuildableName = "MAGALIE_SECURE.app"
-            BlueprintName = "finder_fukang"
-            ReferencedContainer = "container:finder_fukang.xcodeproj">
+            BlueprintName = "Magalie_Secure"
+            ReferencedContainer = "container:Magalie_Secure.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -57,8 +57,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "631982A4171510F400E334A3"
             BuildableName = "MAGALIE_SECURE.app"
-            BlueprintName = "finder_fukang"
-            ReferencedContainer = "container:finder_fukang.xcodeproj">
+            BlueprintName = "Magalie_Secure"
+            ReferencedContainer = "container:Magalie_Secure.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -76,8 +76,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "631982A4171510F400E334A3"
             BuildableName = "MAGALIE_SECURE.app"
-            BlueprintName = "finder_fukang"
-            ReferencedContainer = "container:finder_fukang.xcodeproj">
+            BlueprintName = "Magalie_Secure"
+            ReferencedContainer = "container:Magalie_Secure.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -86,6 +86,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "magalie"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
