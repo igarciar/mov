@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="CellTableIdentifier" rowHeight="370" id="ffy-WK-oo3" customClass="cell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="370"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ffy-WK-oo3" id="OD3-h6-ORA">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="369.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="zSC-iq-rGA">
+                        <rect key="frame" x="8" y="8" width="304" height="43.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <segmentedControl contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bordered" selectedSegmentIndex="0" id="uuR-V9-3ox">
+                        <rect key="frame" x="107" y="267" width="107" height="29"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <segments>
+                            <segment title=" ON"/>
+                            <segment title="OFF"/>
+                        </segments>
+                        <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <connections>
+                            <action selector="enabelAntilostWorkEvent:" destination="ffy-WK-oo3" eventType="valueChanged" id="eHW-vw-lou"/>
+                        </connections>
+                    </segmentedControl>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BPq-Ne-aDU">
+                        <rect key="frame" x="165" y="313" width="36" height="36"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="Button" image="sonar_ico.png"/>
+                        <connections>
+                            <action selector="FindKeyPressedEvent:" destination="ffy-WK-oo3" eventType="touchUpOutside" id="mEq-Ep-Zki"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="U2o-IC-ERg">
+                        <rect key="frame" x="121" y="313" width="36" height="36"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="Button" image="speaker_ico.png"/>
+                        <connections>
+                            <action selector="FindKeyPressedEvent:" destination="ffy-WK-oo3" eventType="touchUpInside" id="fg6-pZ-Fva"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="usv-gu-24L">
+                        <rect key="frame" x="8" y="59" width="304" height="184.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <inset key="contentEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
+                        <state key="normal" image="bolso_amarillo.png">
+                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                        </state>
+                        <state key="highlighted">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="FindKeyPressedEvent:" destination="ffy-WK-oo3" eventType="touchUpInside" id="98T-B2-8Vg"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="FindKeyButton" destination="usv-gu-24L" id="rq6-dl-lqo"/>
+                <outlet property="NameLabel" destination="zSC-iq-rGA" id="Ipx-jW-iIv"/>
+                <outlet property="onOffBUttons" destination="uuR-V9-3ox" id="rS6-34-zsg"/>
+            </connections>
+            <point key="canvasLocation" x="298" y="401"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bolso_amarillo.png" width="801" height="661"/>
+        <image name="sonar_ico.png" width="180" height="180"/>
+        <image name="speaker_ico.png" width="180" height="180"/>
+    </resources>
+</document>

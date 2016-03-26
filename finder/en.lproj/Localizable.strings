@@ -1,0 +1,113 @@
+/* 
+  Localizable.strings
+  Magalie Secure
+
+  Created by Ignacio García on 16-3-23.
+  Copyright (c) Ignacio García. All rights reserved.
+*/
+//Tabitem
+"tabItem1"="Antilost";
+"tabItem2"="Customize";
+"tabItem3"="Add";
+"tabItem4"="Information";
+
+// main
+"AntilostTitle"="Antilost";
+"BackString"="Back";
+"EditString"="Edit";
+"FinishString"="Finish";
+"AddString"="Add";
+//set up
+"SetupTitle"="Information";
+"sharedStr"="Share";
+"aboutStr"="About";
+"operateStr"="operating instructions";
+"sociaText"="I am using Magalie Secure to make my iOS app better. So can you!";
+"SHARE TO TWITTER"="SHARE TO TWITTER";
+"SHARE TO FACEBOOK"="SHARE TO FACEBOOK";
+"SHARE TO WEIBO"="SHARE TO WEIBO";
+"COMPANY WEB"="COMPANY WEB";
+"CONTACT US"="CONTACT US";
+"MORE APP ABOUT BLE"="MORE APP ABOUT BLE";
+
+// Information
+"InformationTitle"="Information";
+"LowBatteryAlertString"="Low battery alert";
+"RemoteCameraString"="Remote camera";
+"UseMapString"="Use map";
+"HowToUse"="How to use";
+
+// Setup
+"SCAN PERIPHERAL"="SCAN PERIPHERAL";
+"ScanString"="SCAN";
+"StopString"="STOP";
+"SETUP PROPERTY"="SETUP PROPERTY";
+"finishStr"="finish";
+"recordString"="customer record";
+"timerString"="No timer";
+"holdkeyDisabelString"="disabel";
+"holdkeySetupDistanceString"="setup distance";
+"holdkeyLostAlarmOnOffString"="lostAlarm on/off";
+"nameDeviceStr"="Device name";
+"nameEditHintStr"="Enter the Antilost's name";
+"workModelStr"="FUCTION SWITCH";
+"nearStr"="near";
+"farStr"="far";
+"autoSetStr"="DISTANCE";
+"timeOnNameStr"="SET TIME ON";
+"timeOffNameStr"="SET TIME OFF";
+"item1.name"="ALARM SETUP";
+"item4.name"="HOLD KEY";
+"recordLocaleStr"="LocaleRecord";
+"CUSTOMBLELABEL"="CUSTOMICE";
+
+//selectImage
+"SELECT IMAGE"="SELECT IMAGE";
+"SELECT FROM INCLUDED IMAGES"="SELECT FROM INCLUDED IMAGES";
+"SELECT FROM CAMERA"="SELECT FROM CAMERA";
+"SELECT FROM PHOTO ALBUM"="SELECT FROM PHOTO ALBUM";
+"Error accessing media"="Error accessing media";
+"Device doesn’t support that media source."="Device doesn’t support that media source.";
+"Drat!"="Drat!";
+
+//SetRingtone
+"SETUP ALARM"="SETUP ALARM";
+"configStr"="config";
+"stopRecordString"="STOP RECORD";
+"detailString"="Selected";
+"setTitleStr"="ALARM";
+"ringTitleStr"="RING";
+"FLASHLIGHT ON ALARM"="FLASHLIGHT ON ALARM";
+"VIBRATE ON ALARM"="VIBRATE ON ALARM";
+"MUTE ON ALARM"="MUTE ON ALARM";
+"MSG ON ALARM"="MSG ON ALARM";
+"addStr"="Add";
+"playRecordStr"="Play Record";
+"updateRecordStr"="update Record";
+"localRingStr "="Local Ring";
+"recordRingStr"="Record";
+"recodeSizeStr"="Size:";
+"recodeTimeStr "="Time:";
+"Cancel"="Cancel";
+"OK"="OK";
+
+//Setup key function
+"SETUP KEY FUNCTION"="SETUP KEY FUNCTION";
+"doneStr"="done";
+"sectionZeroStr"="Hold key pressed function";
+"DISABEL"="DISABEL";
+"SETUP DISTANCE"="SETUP DISTANCE";
+"LOST ALARM ON/OFF"="LOST ALARM ON/OFF";
+
+//Introduce
+"INTRODUCE"="INTRODUCE";
+
+"Sorry"="Sorry";
+
+// blePeripheral
+"AntilostName"="Antilost";
+" is found"=" is found";
+" is outrange"=" is outrange";
+"ConnectedString"=" is connected";
+" is disconnect"=" is disconnect";
+" is power-off"="power off";

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5F817468-E32F-4CB1-A773-5F92EBA083C7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>finder</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>36DDEEA3-3D5D-477D-8642-F56FB6D6E517</key>
+		<string>https://192.168.2.131/svn/ios/Finder/trunk/2.7</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>finder.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>36DDEEA3-3D5D-477D-8642-F56FB6D6E517</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>36DDEEA3-3D5D-477D-8642-F56FB6D6E517</key>
+		<string>https://192.168.2.131/svn/ios</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://192.168.2.131/svn/ios/Finder/trunk/2.7/finder.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>36DDEEA3-3D5D-477D-8642-F56FB6D6E517</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>36DDEEA3-3D5D-477D-8642-F56FB6D6E517</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Finder Vsersion2</string>
+		</dict>
+	</array>
+</dict>
+</plist>

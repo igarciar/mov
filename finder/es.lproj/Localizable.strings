@@ -1,0 +1,115 @@
+/*
+ Localizable.strings
+ Magalie Secure
+ 
+ Created by Ignacio García on 16-3-23.
+ Copyright (c) Ignacio García. All rights reserved.
+ */
+//Tabitem
+"tabItem1"="PRINCIPAL";
+"tabItem2"="PERSONALIZAR";
+"tabItem3"="AÑADIR BALIZA";
+"tabItem4"="INFORMACIÓN";
+
+// Antilost
+"AntilostTitle"="Antilost";
+"BackString"="Volver";
+"EditString"="Editar";
+"FinishString"="Finalizar";
+"AddString"="Añadir";
+
+//set up
+"SetupTitle"="Información";
+"sharedStr"="Compartir";
+"aboutStr"="Acerca de";
+"operateStr"="instrucciones de uso";
+"sociaText"="Estoy utilizando Magalie para hacer mejor mi aplicación para iOS lo que puede.";
+"SHARE TO TWITTER"="Compartir con Twitter";
+"SHARE TO FACEBOOK"="Compartir con Facebook";
+"SHARE TO WEIBO"="Compartir con Weibo";
+"COMPANY WEB"="WEB EMPRESA";
+"CONTACT US"="Contáctenos";
+"MORE APP ABOUT BLE"="MÁS ACERCA DE APP BLE";
+
+// Information
+"InformationTitle"="Información";
+"LowBatteryAlertString"="alerta de batería baja";
+"RemoteCameraString"="cámara a distancia";
+"UseMapString"="Usar un mapa";
+"HowToUse"="Modo de empleo";
+
+// Setup
+"SCAN PERIPHERAL"="SCAN PERIFÉRICO";
+"ScanString"="SCAN";
+"StopString"="STOP";
+"SETUP PROPERTY"="AJUSTE DE LA PROPIEDAD";
+"finishStr"="acabado";
+"recordString"="registro de cliente";
+"timerString"="No timer";
+"holdkeyDisabelString"="disabel";
+"holdkeySetupDistanceString"="distancia de configuración";
+"holdkeyLostAlarmOnOffString"="perdió la alarma on/off";
+"nameDeviceStr"="Nombre del dispositivo";
+"nameEditHintStr"="Introduzca el nombre del Antilost";
+"workModelStr"="INTERRUPTOR FUCTION";
+"nearStr"="cerca";
+"farStr"="lejos";
+"autoSetStr"="DISTANCIA ACTUAL";
+"autoSetStrSET"="DISTANCIA DE AVISO";
+"timeOnNameStr"="SET TIME ON";
+"timeOffNameStr"="SET TIME OFF";
+"item1.name"="AJUSTE DE ALARMA";
+"item4.name"="KEY HOLD";
+"recordLocaleStr"="LocaleRecord";
+"CUSTOMBLELABEL"="PERSONALIZAR";
+
+//selectImage
+"SELECT IMAGE"="IMAGEN SELECT";
+"SELECT FROM INCLUDED IMAGES"="SELECT DE IMÁGENES INCLUIDAS";
+"SELECT FROM CAMERA"="SELECT DE CÁMARA";
+"SELECT FROM PHOTO ALBUM"="SELECT DE FOTO ALBUM";
+"Error accessing media"="Error de acceso a los medios de comunicación";
+"Device doesn’t support that media source."="El dispositivo no es compatible con esa fuente de medios de comunicación.";
+"Drat!"="Maldición!";
+
+//SetRingtone
+"SETUP ALARM"="ALARM SETUP";
+"configStr"="config";
+"stopRecordString"="STOP RECORD";
+"detailString"="seleccionada";
+"setTitleStr"="ALARMA";
+"ringTitleStr"="RING";
+"FLASHLIGHT ON ALARM"="ALARMA LINTERNA EN";
+"VIBRATE ON ALARM"="ALARMA VIBRAR EN";
+"MUTE ON ALARM"="ALARM MUTE EN";
+"MSG ON ALARM"="ALARMA MSG EN";
+"addStr"="Añadir";
+"playRecordStr"="Play Record";
+"updateRecordStr"="Actualizar registro";
+"localRingStr "="Ring local";
+"recordRingStr"="Record";
+"recodeSizeStr"="Tamaño:";
+"recodeTimeStr "="Tiempo:";
+"Cancel"="Cancelar";
+"OK"="OK";
+
+//Setup key function
+"SETUP KEY FUNCTION"="CONFIGURACIÓN DE FUNCIONES CLAVE";
+"doneStr"="hecho";
+"sectionZeroStr"="Hold función pulsar la tecla";
+"DISABEL"="disabel";
+"SETUP DISTANCE"="DISTANCIA DE CONFIGURACIÓN";
+"LOST ALARM ON/OFF"="perdió la alarma ON/OFF";
+
+//Introduce
+"INTRODUCE"="INTRODUCIR";
+
+"Sorry"="Lo siento";
+
+// blePeripheral
+"AntilostName"="Antilost";
+" is found"=" es encontrado";
+" is outrange"=" se descubren";
+"ConnectedString"=" está conectado";
+" is disconnect"=" es desconectar";
+" is power-off"="apagado";

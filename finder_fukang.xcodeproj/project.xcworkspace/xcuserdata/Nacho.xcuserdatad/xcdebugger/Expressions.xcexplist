@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[SetupProperty tableView:cellForRowAtIndexPath:]:SetupProperty.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SetupProperty CBTxRssi]:SetupProperty.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "kMaxSetResponseRssiValue">
+            </PersistentString>
+            <PersistentString
+               value = "(_currentPeripheral.TxFilteringValue - kMinResponseRssiValue)">
+            </PersistentString>
+            <PersistentString
+               value = "kMinResponseRssiValue">
+            </PersistentString>
+            <PersistentString
+               value = "_currentPeripheral.TxFilteringValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SetupProperty firstViewCell]:SetupProperty.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

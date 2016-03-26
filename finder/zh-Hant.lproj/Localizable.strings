@@ -1,0 +1,111 @@
+/*
+ Localizable.strings
+ Magalie Secure
+ 
+ Created by Ignacio García on 16-3-23.
+ Copyright (c) Ignacio García. All rights reserved.
+ */
+"tabItem1"="防丢器列表";
+"tabItem2"="软件信息";
+
+// Antilost
+"AntilostTitle"="防丢器列表";
+"BackString"="返回";
+"EditString"="编辑";
+"FinishString"="完成";
+"AddString"="添加";
+
+//set up
+"SetupTitle"="软件信息";
+"sharedStr"="发布";
+"aboutStr"="关于";
+"operateStr"="操作说明";
+"sociaText"="我现在使用的这个防丢器软件很有意思，推荐你也可以试一下！";
+"SHARE TO TWITTER"="发布到Twitter";
+"SHARE TO FACEBOOK"="发布到Facebook";
+"SHARE TO WEIBO"="发布到新浪微博";
+"COMPANY WEB"="公司网站";
+"CONTACT US"="联系开发者";
+"MORE APP ABOUT BLE"="更多BLE软件";
+
+// Information
+"InformationTitle"="信息";
+"LowBatteryAlertString"="低电提示";
+"RemoteCameraString"="遥控拍照";
+"UseMapString"="地图定位";
+"HowToUse"="使用说明";
+
+// Setup
+"SCAN PERIPHERAL"="扫描防丢器";
+"ScanString"="扫描";
+"StopString"="停止";
+"SETUP PROPERTY"="设置参数";
+"finishStr"="完成";
+"recordString"="用户录音";
+"timerString"="未设置定时";
+"holdkeyDisabelString"="未使用";
+"holdkeySetupDistanceString"="设定距离";
+"holdkeyLostAlarmOnOffString"="开关防丢";
+"nameDeviceStr"="设备名称";
+"nameEditHintStr"="输入防丢名称";
+"workModelStr"="防丢功能开关";
+"nearStr"="近";
+"farStr"="远";
+"autoSetStr"="距离设定";
+"item1.name"="提示设定";
+"timeOnNameStr"="设置定时开";
+"timeOffNameStr"="设置定时关";
+"item4.name"="长按键功能";
+"recordLocaleStr"="录音文件";
+"CUSTOMBLELABEL"="CUSTOMICE";
+
+//selectImage
+"SELECT IMAGE"="选择图片";
+"SELECT FROM INCLUDED IMAGES"="从图片中选取";
+"SELECT FROM CAMERA"="从摄像头选取";
+"SELECT FROM PHOTO ALBUM"="从相册中选取";
+"Error accessing media"="Error accessing media";
+"Device doesn’t support that media source."="Device doesn’t support that media source.";
+"Drat!"="Drat!";
+
+//SetRingtone
+"SETUP ALARM"="设置报警方式";
+"configStr"="确定";
+"stopRecordString"="停止录音";
+"detailString"="已选择";
+"setTitleStr"="功能设置";
+"ringTitleStr"="报警铃声";
+"FLASHLIGHT ON ALARM"="报警时闪灯";
+"VIBRATE ON ALARM"="报警时振动";
+"MUTE ON ALARM"="报警时静音";
+"MSG ON ALARM"="报警发消息";
+"addStr"="添加录音";
+"playRecordStr"="播放录音";
+"updateRecordStr"="更新录音文件";
+"localRingStr"="本地铃音";
+"recordRingStr"="录音";
+"recodeSizeStr"="大小:";
+"recodeTimeStr"="时间:";
+"Cancel"="取消";
+"OK"="确认";
+
+//Setup key function
+"SETUP KEY FUNCTION"="设置长按键功能";
+"doneStr"="完成";
+"sectionZeroStr"="长按键功能";
+"DISABEL"="未使用";
+"SETUP DISTANCE"="设定距离";
+"LOST ALARM ON/OFF"="开关防丢";
+
+//Introduce
+"INTRODUCE"="操作说明";
+
+"Sorry"="抱歉";
+
+// blePeripheral
+"AntilostName"="防丢器";
+" is found"="寻找手机";
+" is outrange"="超出范围报警";
+"ConnectedString"="已经连接";
+" is disconnect"="断开连接";
+" is power-off"="关机";

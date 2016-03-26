@@ -1,0 +1,111 @@
+/* 
+  Localizable.strings
+  Antilost
+
+  Created by David ding on 14-4-23.
+  Copyright (c) 2014年 David ding. All rights reserved.
+*/
+//Tabitem
+"tabItem1"="Antilost";
+"tabItem2"="Information";
+
+// Antilost
+"AntilostTitle"="Antilost";
+"BackString"="Retour";
+"EditString"="Modifier";
+"FinishString"="Terminer";
+"AddString"="Ajouter";
+
+//set up
+"SetupTitle"="Information";
+"sharedStr"="Partager";
+"aboutStr"="A propos";
+"operateStr"="Mode d'emploi";
+"sociaText"="Je utilise AntiLost faire mon application iOS mieux si vous le pouvez!";
+"SHARE TO TWITTER"="Partager sur TWITTER";
+"SHARE TO FACEBOOK"="Partager sur FACEBOOK";
+"SHARE TO WEIBO"="Partager sur WEIBO";
+"COMPANY WEB"="société Web";
+"CONTACT US"="NOUS CONTACTER";
+"MORE APP ABOUT BLE"="PLUS appli À propos de BLE";
+
+// Information
+"InformationTitle"="Information";
+"LowBatteryAlertString"="alerte de batterie faible";
+"RemoteCameraString"="caméra à distance";
+"UseMapString"="Utiliser la carte"；
+"HowToUse"="Comment utiliser";
+
+// Setup
+"SCAN PERIPHERAL"="SCAN PÉRIPHÉRIQUE";
+"ScanString"="SCAN";
+"StopString"="STOP";
+"SETUP PROPERTY"="SETUP PROPERTY";
+"finishStr"="Terminer";
+"recordString"="fiche client";
+"timerString"="No timer";
+"holdkeyDisabelString"="disabel";
+"holdkeySetupDistanceString"="la distance d'installation";
+"holdkeyLostAlarmOnOffString"="Alarme perdu ON / OFF";
+"nameDeviceStr"="Device name";
+"nameEditHintStr"="Enter the Antilost's name";
+"workModelStr"="FUCTION SWITCH";
+"nearStr"="near";
+"farStr"="far";
+"autoSetStr"="DISTANCE";
+"timeOnNameStr"="SET TIME ON";
+"timeOffNameStr"="SET TIME OFF";
+"item1.name"="ALARM SETUP";
+"item4.name"="HOLD KEY";
+"recordLocaleStr"="LocaleRecord";
+
+//selectImage
+"SELECT IMAGE"="SELECT IMAGE";
+"SELECT FROM INCLUDED IMAGES"="SELECT FROM INCLUDED IMAGES";
+"SELECT FROM CAMERA"="SELECT FROM CAMERA";
+"SELECT FROM PHOTO ALBUM"="SELECT FROM PHOTO ALBUM";
+"Error accessing media"="Error accessing media";
+"Device doesn’t support that media source."="Device doesn’t support that media source.";
+"Drat!"="Drat!";
+
+//SetRingtone
+"SETUP ALARM"="SETUP ALARM";
+"configStr"="config";
+"stopRecordString"="STOP RECORD";
+"detailString"="Selected";
+"setTitleStr"="ALARM";
+"ringTitleStr"="RING";
+"FLASHLIGHT ON ALARM"="FLASHLIGHT ON ALARM";
+"VIBRATE ON ALARM"="VIBRATE ON ALARM";
+"MUTE ON ALARM"="MUTE ON ALARM";
+"MSG ON ALARM"="MSG ON ALARM";
+"addStr"="Add";
+"playRecordStr"="Play Record";
+"updateRecordStr"="update Record";
+"localRingStr "="Local Ring";
+"recordRingStr"="Record";
+"recodeSizeStr"="Size:";
+"recodeTimeStr "="Time:";
+"Cancel"="Cancel";
+"OK"="OK";
+
+//Setup key function
+"SETUP KEY FUNCTION"="SETUP KEY FUNCTION";
+"doneStr"="done";
+"sectionZeroStr"="Hold key pressed function";
+"DISABEL"="DISABEL";
+"SETUP DISTANCE"="SETUP DISTANCE";
+"LOST ALARM ON/OFF"="Alarme perdu ON / OFF";
+
+//Introduce
+"INTRODUCE"="INTRODUCE";
+
+"Sorry"="Sorry";
+
+// blePeripheral
+"AntilostName"="Antilost";
+" is found"=" is found";
+" is outrange"=" is outrange";
+"ConnectedString"=" is connected";
+" is disconnect"=" is disconnect";
+" is power-off"="power off";
