@@ -819,7 +819,7 @@
 {
     if(chooseSetupTimer > 0)
     {
-        NSString *str= nil;
+       // NSString *str= nil;
         if(chooseSetupTimer == 1){
             _currentPeripheral.timerOnHour = [pickerView selectedRowInComponent:kHourComponent];
             _currentPeripheral.timerOnMinute = [pickerView selectedRowInComponent:kMinuteComponent];

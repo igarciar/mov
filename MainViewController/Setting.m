@@ -41,17 +41,19 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 
-    imageShareArray =[ [NSArray alloc]initWithObjects:@"twitter",@"facebook",@"weibo",@"weibo", nil];
+    imageShareArray =[ [NSArray alloc]initWithObjects:@"twitter",@"facebook", nil];
     // 设置本地语音界面
     [self loadCurrentLocale];
  
     // 使用全局变量
     blead = [[UIApplication sharedApplication]delegate];
+    // [self setHidesBottomBarWhenPushed:NO];
+    [self.navigationController setNavigationBarHidden:YES];
     
 }
 -(void)viewWillDisappear:(BOOL)animated
 {
-    [self setHidesBottomBarWhenPushed:NO];
+    //[self setHidesBottomBarWhenPushed:NO];
 }
 - (void)viewDidUnload
 {
@@ -92,11 +94,11 @@
 //    }
 //    else{
         // English
-    self.title = NSLocalizedString(@"SetupTitle", nil);
+    //self.title = NSLocalizedString(@"SetupTitle", nil);
     sharedStr = NSLocalizedString(@"sharedStr", nil);
     aboutStr = NSLocalizedString(@"aboutStr", nil);
     operateStr = NSLocalizedString(@"operateStr", nil);
-    self.sharArray = [NSArray arrayWithObjects:NSLocalizedString(@"SHARE TO TWITTER", nil),NSLocalizedString(@"SHARE TO FACEBOOK", nil),NSLocalizedString(@"SHARE TO WEIBO", nil),operateStr, nil];
+    self.sharArray = [NSArray arrayWithObjects:NSLocalizedString(@"SHARE TO TWITTER", nil),NSLocalizedString(@"SHARE TO FACEBOOK", nil), nil];
     self.aboutArray = [NSArray arrayWithObjects:NSLocalizedString(@"COMPANY WEB", nil) ,NSLocalizedString(@"CONTACT US", nil),NSLocalizedString(@"MORE APP ABOUT BLE", nil) , nil];
     sociaText = NSLocalizedString(@"sociaText", nil);
 //    }
@@ -122,8 +124,8 @@
         
         controller = [[introduce alloc]initWithNibName:@"introduce35" bundle:nil];
     }
-    [self setHidesBottomBarWhenPushed:YES];
-    [self.navigationController pushViewController:controller animated:YES];
+    //[self setHidesBottomBarWhenPushed:YES];
+    [self.navigationController setNavigationBarHidden:YES];
 }
 - (void) displayText:(NSString *) sOutput {
     NSLog(@"out : %@",sOutput);
@@ -174,6 +176,8 @@
 {
     return 1;//反回分组的个数
 }
+
+/*
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     if(section == 0)
@@ -184,7 +188,7 @@
         return  [NSString stringWithFormat:@"%@  V%@",aboutStr,[infoDictionary objectForKey:@"CFBundleShortVersionString"]];
     }
     return self.title;
-}
+}*/
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if(section == 0)

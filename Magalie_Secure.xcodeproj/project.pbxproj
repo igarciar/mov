@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		520045281794ED2C0005ACF5 /* RecorderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 520045271794ED2C0005ACF5 /* RecorderModel.m */; };
-		5246CFE31818AE0D00E32EF4 /* icon57.-png in Resources */ = {isa = PBXBuildFile; fileRef = 5246CFDC1818AE0D00E32EF4 /* icon57.-png */; };
-		5246CFE41818AE0D00E32EF4 /* icon57@2x.-png in Resources */ = {isa = PBXBuildFile; fileRef = 5246CFDD1818AE0D00E32EF4 /* icon57@2x.-png */; };
 		5246CFE51818AE0D00E32EF4 /* icon60.png in Resources */ = {isa = PBXBuildFile; fileRef = 5246CFDE1818AE0D00E32EF4 /* icon60.png */; };
 		5246CFE61818AE0D00E32EF4 /* icon60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5246CFDF1818AE0D00E32EF4 /* icon60@2x.png */; };
 		5246CFE71818AE0D00E32EF4 /* icon77.png in Resources */ = {isa = PBXBuildFile; fileRef = 5246CFE01818AE0D00E32EF4 /* icon77.png */; };
@@ -163,6 +161,8 @@
 		6691E9181CA5DD9600E907D1 /* Perifericos.m in Sources */ = {isa = PBXBuildFile; fileRef = 6691E9151CA5DD9600E907D1 /* Perifericos.m */; };
 		66E3B0BD1CA72F160098E31D /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 66E3B0BC1CA72F160098E31D /* launch.png */; };
 		66E3B0C11CA73E660098E31D /* launch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E3B0C01CA73E660098E31D /* launch.xib */; };
+		66E3B0C51CB141880098E31D /* icon57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66E3B0C31CB141880098E31D /* icon57@2x.png */; };
+		66E3B0C61CB141880098E31D /* icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 66E3B0C41CB141880098E31D /* icon57.png */; };
 		66EF4DAE1C9F5B6800C50B62 /* logo_with_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 66EF4DAD1C9F5B6800C50B62 /* logo_with_text.png */; };
 		BECE87FD1BFAE5F600CD3017 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BECE87FF1BFAE5F600CD3017 /* Localizable.strings */; };
 /* End PBXBuildFile section */
@@ -170,8 +170,6 @@
 /* Begin PBXFileReference section */
 		520045261794ED2C0005ACF5 /* RecorderModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecorderModel.h; sourceTree = "<group>"; };
 		520045271794ED2C0005ACF5 /* RecorderModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecorderModel.m; sourceTree = "<group>"; };
-		5246CFDC1818AE0D00E32EF4 /* icon57.-png */ = {isa = PBXFileReference; lastKnownFileType = file; path = "icon57.-png"; sourceTree = "<group>"; };
-		5246CFDD1818AE0D00E32EF4 /* icon57@2x.-png */ = {isa = PBXFileReference; lastKnownFileType = file; path = "icon57@2x.-png"; sourceTree = "<group>"; };
 		5246CFDE1818AE0D00E32EF4 /* icon60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon60.png; sourceTree = "<group>"; };
 		5246CFDF1818AE0D00E32EF4 /* icon60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon60@2x.png"; sourceTree = "<group>"; };
 		5246CFE01818AE0D00E32EF4 /* icon77.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon77.png; sourceTree = "<group>"; };
@@ -347,6 +345,8 @@
 		6691E9151CA5DD9600E907D1 /* Perifericos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Perifericos.m; sourceTree = "<group>"; };
 		66E3B0BC1CA72F160098E31D /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		66E3B0C01CA73E660098E31D /* launch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = launch.xib; sourceTree = "<group>"; };
+		66E3B0C31CB141880098E31D /* icon57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon57@2x.png"; sourceTree = "<group>"; };
+		66E3B0C41CB141880098E31D /* icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon57.png; sourceTree = "<group>"; };
 		66EF4DAD1C9F5B6800C50B62 /* logo_with_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_with_text.png; sourceTree = "<group>"; };
 		BE6F925A1C46A7010076B642 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BE6F925B1C46A7020076B642 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -488,10 +488,10 @@
 				6373F7B3183CBA4E003E0F80 /* keys.png */,
 				6373F7B4183CBA4E003E0F80 /* purse.png */,
 				6373F7B5183CBA4E003E0F80 /* suitcase.png */,
+				66E3B0C31CB141880098E31D /* icon57@2x.png */,
+				66E3B0C41CB141880098E31D /* icon57.png */,
 				6373F7B6183CBA4E003E0F80 /* Trolley.png */,
 				6373F78A183CAE7A003E0F80 /* Default-568h@2x.png */,
-				5246CFDC1818AE0D00E32EF4 /* icon57.-png */,
-				5246CFDD1818AE0D00E32EF4 /* icon57@2x.-png */,
 				5246CFDE1818AE0D00E32EF4 /* icon60.png */,
 				5246CFDF1818AE0D00E32EF4 /* icon60@2x.png */,
 				5246CFE01818AE0D00E32EF4 /* icon77.png */,
@@ -820,6 +820,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				631982B3171510F400E334A3 /* InfoPlist.strings in Resources */,
+				66E3B0C51CB141880098E31D /* icon57@2x.png in Resources */,
 				6319834E1715175700E334A3 /* 119jd.mp3 in Resources */,
 				6319834F1715175700E334A3 /* Alarm_Beep_01.mp3 in Resources */,
 				631983501715175700E334A3 /* Alarm_Beep_02.mp3 in Resources */,
@@ -889,6 +890,7 @@
 				631984AA1715193800E334A3 /* SelectImage@568.xib in Resources */,
 				631984AC1715193800E334A3 /* SelectImageFromImages.xib in Resources */,
 				631984AD1715193800E334A3 /* SelectImageFromImages@568.xib in Resources */,
+				66E3B0C61CB141880098E31D /* icon57.png in Resources */,
 				631984AF1715193800E334A3 /* SetRingtone.xib in Resources */,
 				631984B01715193800E334A3 /* SetRingtone@568.xib in Resources */,
 				6667D2BA1CA14E4E00473D52 /* cell2.xib in Resources */,
@@ -909,8 +911,6 @@
 				637C26EA1761C3950089F5C8 /* vibrate_balck.png in Resources */,
 				63C745A417645BDC00F53392 /* introduce35.xib in Resources */,
 				63C745A517645BDC00F53392 /* introduce40.xib in Resources */,
-				5246CFE31818AE0D00E32EF4 /* icon57.-png in Resources */,
-				5246CFE41818AE0D00E32EF4 /* icon57@2x.-png in Resources */,
 				5246CFE51818AE0D00E32EF4 /* icon60.png in Resources */,
 				5246CFE61818AE0D00E32EF4 /* icon60@2x.png in Resources */,
 				5246CFE71818AE0D00E32EF4 /* icon77.png in Resources */,
@@ -1080,8 +1080,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "finder/MAGALIE_SECURE-Prefix.pch";
 				INFOPLIST_FILE = "finder/MAGALIE-SECURE-Info.plist";
@@ -1092,7 +1092,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.igarcia.ble.magalie;
 				PRODUCT_NAME = MAGALIE_SECURE;
-				PROVISIONING_PROFILE = "b44f3c58-5a13-49f5-b2cb-253e197748d9";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "b44f3c58-5a13-49f5-b2cb-253e197748d9";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1106,8 +1106,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "finder/MAGALIE_SECURE-Prefix.pch";
 				INFOPLIST_FILE = "finder/MAGALIE-SECURE-Info.plist";
@@ -1118,7 +1118,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = es.igarcia.ble.magalie;
 				PRODUCT_NAME = MAGALIE_SECURE;
-				PROVISIONING_PROFILE = "b44f3c58-5a13-49f5-b2cb-253e197748d9";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "b44f3c58-5a13-49f5-b2cb-253e197748d9";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
