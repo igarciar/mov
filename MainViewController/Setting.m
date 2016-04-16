@@ -212,12 +212,12 @@
     {
 		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
 	}
-    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;//UITableViewCellAccessoryDetailDisclosureButton;
+    //cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;//UITableViewCellAccessoryDetailDisclosureButton;
     cell.backgroundColor=[UIColor blackColor];
-    cell.textColor = [UIColor whiteColor];
-    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12];
+    [cell.textLabel setTextColor:[UIColor whiteColor]];
+    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:14];
     [cell.textLabel setNumberOfLines:2];
-    cell.detailTextLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:10];
+    cell.detailTextLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12];
     ;
     [cell.detailTextLabel setTextColor:[UIColor whiteColor]];
     [cell.detailTextLabel setLineBreakMode:NSLineBreakByWordWrapping];
