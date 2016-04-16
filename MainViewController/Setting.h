@@ -12,6 +12,6 @@
 @interface Setting : UIViewController<MFMailComposeViewControllerDelegate,UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic, strong) IBOutlet UITableView *listView;
-@property (nonatomic, strong) NSArray *aboutArray,*sharArray;
+@property (nonatomic, strong) NSArray *aboutArray,*sharArray,*valoresFAQ,*valoresFAQreponse;
 
 @end

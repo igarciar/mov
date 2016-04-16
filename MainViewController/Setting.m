@@ -100,6 +100,8 @@
     operateStr = NSLocalizedString(@"operateStr", nil);
     self.sharArray = [NSArray arrayWithObjects:NSLocalizedString(@"SHARE TO TWITTER", nil),NSLocalizedString(@"SHARE TO FACEBOOK", nil), nil];
     self.aboutArray = [NSArray arrayWithObjects:NSLocalizedString(@"COMPANY WEB", nil) ,NSLocalizedString(@"CONTACT US", nil),NSLocalizedString(@"MORE APP ABOUT BLE", nil) , nil];
+    self.valoresFAQ=[NSArray arrayWithObjects:NSLocalizedString(@"FAQ1", nil),NSLocalizedString(@"FAQ2", nil),NSLocalizedString(@"FAQ3", nil),NSLocalizedString(@"FAQ4", nil), nil ];
+    self.valoresFAQreponse=[NSArray arrayWithObjects:NSLocalizedString(@"RESP1", nil), NSLocalizedString(@"RESP2", nil), NSLocalizedString(@"RESP3", nil), NSLocalizedString(@"RESP4", nil), nil ];
     sociaText = NSLocalizedString(@"sociaText", nil);
 //    }
 }
@@ -174,26 +176,28 @@
 #pragma UItableViewDelegate
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;//反回分组的个数
+    return 1;
 }
-
 /*
+
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
     if(section == 0)
     {
-        return sharedStr;
+        return @"FAQ";
     }else if(section == 1){
-        NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
-        return  [NSString stringWithFormat:@"%@  V%@",aboutStr,[infoDictionary objectForKey:@"CFBundleShortVersionString"]];
+       
+        return  @"SOCIAL";
     }
     return self.title;
-}*/
+}
+ 
+ */
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     if(section == 0)
     {
-        return _sharArray.count;
+        return self.valoresFAQ.count;
     }else if(section == 1){
         return  _aboutArray.count;
     }
@@ -201,20 +205,42 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static  NSString *identifier = @"CustomIdentifier";
+    NSInteger row=indexPath.row;
+    static  NSString *identifier = @"custom2";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if(cell == nil)
     {
-		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier];
+		cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier];
 	}
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;//UITableViewCellAccessoryDetailDisclosureButton;
+    cell.backgroundColor=[UIColor blackColor];
+    cell.textColor = [UIColor whiteColor];
+    cell.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:12];
+    [cell.textLabel setNumberOfLines:2];
+    cell.detailTextLabel.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:10];
+    ;
+    [cell.detailTextLabel setTextColor:[UIColor whiteColor]];
+    [cell.detailTextLabel setLineBreakMode:NSLineBreakByWordWrapping];
+    [cell.detailTextLabel setNumberOfLines:5];
+    
     if(indexPath.section == 0)
     {
-        UIImage *image = [UIImage imageNamed:imageShareArray[indexPath.row]];
-        [cell.imageView setImage:image];
-        cell.textLabel.text = _sharArray[indexPath.row];
+        
+        cell.textLabel.tintColor=[UIColor whiteColor];
+        cell.textLabel.text = self.valoresFAQ[row];
+        cell.detailTextLabel.tintColor=[UIColor whiteColor];
+        cell.detailTextLabel.text=self.valoresFAQreponse[row] ;
+       /* NSArray* foo = [cell.detailTextLabel.text componentsSeparatedByString: @"|"];
+        cell.detailTextLabel.text=@"";
+        for (NSString *v2 in foo) {
+            [cell.detailTextLabel.description stringByAppendingString:v2];
+            cell.detailTextLabel.tintColor=[UIColor whiteColor];
+        }
+      */
     }else if(indexPath.section == 1){
-        cell.textLabel.text = _aboutArray[indexPath.row];
+        UIImage *image = [UIImage imageNamed:imageShareArray[row]];
+        [cell.imageView setImage:image];
+        cell.textLabel.text = _sharArray[row];
     }
     return cell;
 }
@@ -222,7 +248,7 @@
 {
     NSLog(@"listview did selected ");
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    if(indexPath.section == 0) {  //分享
+    if(indexPath.section == 1) {  //分享
         switch (indexPath.row) {
                 case 0:
                     [self postMessageForServiceType:SLServiceTypeTwitter];;
@@ -239,7 +265,9 @@
                 default:
                     break;
         }
-    }else if(indexPath.section == 1){  //关于
+    }
+   /*
+    else if(indexPath.section == 1){  //关于
         switch (indexPath.row) {
             case 0:
                 [self openWeb];
@@ -251,6 +279,7 @@
                 break;
         }
     }
+    */
 }
 
 -(void) openWeb

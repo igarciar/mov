@@ -3,6 +3,28 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[Setting tableView:cellForRowAtIndexPath:]:Setting.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.detailTextLabel.text">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "self.valoresFAQreponse[row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SetupProperty firstViewCell]:SetupProperty.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[SetupProperty tableView:cellForRowAtIndexPath:]:SetupProperty.m">
       </ContextState>
       <ContextState
@@ -12,21 +34,13 @@
                value = "kMaxSetResponseRssiValue">
             </PersistentString>
             <PersistentString
-               value = "(_currentPeripheral.TxFilteringValue - kMinResponseRssiValue)">
-            </PersistentString>
-            <PersistentString
                value = "kMinResponseRssiValue">
             </PersistentString>
             <PersistentString
-               value = "_currentPeripheral.TxFilteringValue">
+               value = "(_currentPeripheral.TxFilteringValue - kMinResponseRssiValue)">
             </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[SetupProperty firstViewCell]:SetupProperty.m">
-         <PersistentStrings>
             <PersistentString
-               value = "">
+               value = "_currentPeripheral.TxFilteringValue">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

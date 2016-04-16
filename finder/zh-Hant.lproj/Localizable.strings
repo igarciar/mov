@@ -109,3 +109,14 @@
 "ConnectedString"="已经连接";
 " is disconnect"="断开连接";
 " is power-off"="关机";
+
+//FAQ
+"FAQ1"="¿Como sincronizo?";
+"RESP1"="Debes tener encendido el bluetooth del teléfono.\nActivamos la baliza presionando el botón de arranque unos segundos hasta que suene un sonido. Y nos vamos a la app a la opción de añadir, en unos instantes aparecera tu Magalie Security.";
+"FAQ2"="¿No veo mi Magalie Security en la pantalla de búsqueda?";
+"RESP2"="Debes tener encendido el bluetooth del teléfono.\nLa baliza puede estar apagada presione el botón unos segundos hasta que suene un sonido.";
+"FAQ3"="¿No se conecta mi Magalie Security?";
+"RESP3"="Si no ha sonado un bit mientras presionabas, puede que estemos sin pila (habrá que cambiarla, se recomienda usar la herramienta adjunta).\nPuede que ya este sincronizado, mirar en la pantalla principal.";
+"FAQ4"="¿Como elimino mi Magalie Security?";
+"RESP4"="Solo tendrás que deslizar el dedo sobre el Magalie Security deseado de derecha a izquierda y presionar sobre el botón que aparece para eliminar.";
+
