@@ -11,6 +11,7 @@
 #import "AddObjects.h"
 #import "ScanPeripheral.h"
 #import "SetupProperty.h"
+#import "Radar.h"
 #import "cell.h"
 
 
@@ -231,6 +232,8 @@
     
     if (![cell.currentPeripheral isEqual:[blead.ble.blePeripheralArray objectAtIndex:indexPath.row]]) {
         cell.currentPeripheral = [blead.ble.blePeripheralArray objectAtIndex:indexPath.row];
+        cell.parent=self;
+        
         //NSLog(@"当前的数组： %@", blead.ble.blePeripheralArray);
         //NSLog(@"cell.currentPeripheral:%@",cell.currentPeripheral);
     }
@@ -304,5 +307,6 @@
     [self.navigationController pushViewController:svc animated:YES];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
+
 
 @end

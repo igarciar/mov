@@ -147,7 +147,6 @@
 		63C745A417645BDC00F53392 /* introduce35.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C745A117645BDC00F53392 /* introduce35.xib */; };
 		63C745A517645BDC00F53392 /* introduce40.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C745A217645BDC00F53392 /* introduce40.xib */; };
 		660A9B381CA6A5850081F922 /* Perifericos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 660A9B371CA6A5850081F922 /* Perifericos.xib */; };
-		66320A241CC69DC000B6726A /* Radar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66320A231CC69DC000B6726A /* Radar.xib */; };
 		66320A261CC69EFF00B6726A /* radar.png in Resources */ = {isa = PBXBuildFile; fileRef = 66320A251CC69EFF00B6726A /* radar.png */; };
 		66320A2A1CC6AA2E00B6726A /* fAzul.png in Resources */ = {isa = PBXBuildFile; fileRef = 66320A271CC6AA2E00B6726A /* fAzul.png */; };
 		66320A2B1CC6AA2E00B6726A /* fRojo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66320A281CC6AA2E00B6726A /* fRojo.png */; };
@@ -162,6 +161,8 @@
 		6667D2BA1CA14E4E00473D52 /* cell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6667D2B91CA14E4E00473D52 /* cell2.xib */; };
 		6689F8F81CA72C0C00229ABF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6689F8F71CA72C0C00229ABF /* Images.xcassets */; };
 		6691E9181CA5DD9600E907D1 /* Perifericos.m in Sources */ = {isa = PBXBuildFile; fileRef = 6691E9151CA5DD9600E907D1 /* Perifericos.m */; };
+		6694AC451CC6B97C001F1DED /* Radar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6694AC431CC6B97C001F1DED /* Radar.m */; };
+		6694AC461CC6B97C001F1DED /* Radar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6694AC441CC6B97C001F1DED /* Radar.xib */; };
 		66E3B0BD1CA72F160098E31D /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 66E3B0BC1CA72F160098E31D /* launch.png */; };
 		66E3B0C11CA73E660098E31D /* launch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E3B0C01CA73E660098E31D /* launch.xib */; };
 		66E3B0C51CB141880098E31D /* icon57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66E3B0C31CB141880098E31D /* icon57@2x.png */; };
@@ -332,11 +333,11 @@
 		63C745A117645BDC00F53392 /* introduce35.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = introduce35.xib; path = SubViewController/introduce35.xib; sourceTree = SOURCE_ROOT; };
 		63C745A217645BDC00F53392 /* introduce40.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = introduce40.xib; path = SubViewController/introduce40.xib; sourceTree = SOURCE_ROOT; };
 		660A9B371CA6A5850081F922 /* Perifericos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Perifericos.xib; sourceTree = "<group>"; };
-		66320A231CC69DC000B6726A /* Radar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Radar.xib; sourceTree = "<group>"; };
 		66320A251CC69EFF00B6726A /* radar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radar.png; sourceTree = "<group>"; };
 		66320A271CC6AA2E00B6726A /* fAzul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fAzul.png; sourceTree = "<group>"; };
 		66320A281CC6AA2E00B6726A /* fRojo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fRojo.png; sourceTree = "<group>"; };
 		66320A291CC6AA2E00B6726A /* fBlanco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fBlanco.png; sourceTree = "<group>"; };
+		66320A2D1CC6AF2200B6726A /* SetupProperty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SetupProperty.h; path = SubViewController/SetupProperty.h; sourceTree = SOURCE_ROOT; };
 		665D12561CA407A000759149 /* main_ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_ico.png; sourceTree = "<group>"; };
 		665D125A1CA4A00500759149 /* info_w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_w.png; sourceTree = "<group>"; };
 		665D125C1CA4A05B00759149 /* add_ico_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_ico_white.png; sourceTree = "<group>"; };
@@ -348,6 +349,9 @@
 		6689F8F71CA72C0C00229ABF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = finder_fukang/Images.xcassets; sourceTree = "<group>"; };
 		6691E9141CA5DD9600E907D1 /* Perifericos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Perifericos.h; sourceTree = "<group>"; };
 		6691E9151CA5DD9600E907D1 /* Perifericos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Perifericos.m; sourceTree = "<group>"; };
+		6694AC421CC6B97C001F1DED /* Radar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Radar.h; path = SubViewController/Radar.h; sourceTree = SOURCE_ROOT; };
+		6694AC431CC6B97C001F1DED /* Radar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Radar.m; path = SubViewController/Radar.m; sourceTree = SOURCE_ROOT; };
+		6694AC441CC6B97C001F1DED /* Radar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Radar.xib; path = SubViewController/Radar.xib; sourceTree = SOURCE_ROOT; };
 		66E3B0BC1CA72F160098E31D /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		66E3B0C01CA73E660098E31D /* launch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = launch.xib; sourceTree = "<group>"; };
 		66E3B0C31CB141880098E31D /* icon57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon57@2x.png"; sourceTree = "<group>"; };
@@ -669,7 +673,6 @@
 				6319840A171518B600E334A3 /* Setting.m */,
 				6319840B171518B600E334A3 /* Setting.xib */,
 				63198414171518B600E334A3 /* Setting@568.xib */,
-				66320A231CC69DC000B6726A /* Radar.xib */,
 			);
 			name = MainViewController;
 			sourceTree = "<group>";
@@ -677,11 +680,15 @@
 		6319846E1715190700E334A3 /* Antilost */ = {
 			isa = PBXGroup;
 			children = (
+				6694AC421CC6B97C001F1DED /* Radar.h */,
+				6694AC431CC6B97C001F1DED /* Radar.m */,
+				6694AC441CC6B97C001F1DED /* Radar.xib */,
 				631984781715193800E334A3 /* ScanPeripheral.h */,
 				631984791715193800E334A3 /* ScanPeripheral.m */,
 				6319847A1715193800E334A3 /* ScanPeripheral.xib */,
 				6319847B1715193800E334A3 /* ScanPeripheral@568.xib */,
 				631984991715193800E334A3 /* SetupProperty.m */,
+				66320A2D1CC6AF2200B6726A /* SetupProperty.h */,
 				6319849A1715193800E334A3 /* SetupProperty.xib */,
 				6319849B1715193800E334A3 /* SetupProperty@568.xib */,
 				631984BD1715197300E334A3 /* SetupProperty */,
@@ -928,7 +935,6 @@
 				5246CFE91818AE0D00E32EF4 /* icon1024.png in Resources */,
 				6359EE5B183C655800FA57D8 /* readme.rtf in Resources */,
 				6667D2B41CA14CC200473D52 /* sonar_ico.png in Resources */,
-				66320A241CC69DC000B6726A /* Radar.xib in Resources */,
 				6373F788183CAE2B003E0F80 /* Alarm_Classic.mp3 in Resources */,
 				6373F789183CAE2B003E0F80 /* pixiedust.mp3 in Resources */,
 				6373F78B183CAE7A003E0F80 /* Default-568h@2x.png in Resources */,
@@ -945,6 +951,7 @@
 				6373F7C1183CBA4E003E0F80 /* suitcase.png in Resources */,
 				636649E21859AB58001B2550 /* introduce1_CN.png in Resources */,
 				636649E31859AB58001B2550 /* introduce1_EN.png in Resources */,
+				6694AC461CC6B97C001F1DED /* Radar.xib in Resources */,
 				636649E41859AB58001B2550 /* introduce2_CN.png in Resources */,
 				636649E51859AB58001B2550 /* introduce2_EN.png in Resources */,
 				636649E61859AB58001B2550 /* introduce3_CN.png in Resources */,
@@ -966,6 +973,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6694AC451CC6B97C001F1DED /* Radar.m in Sources */,
 				631982B5171510F400E334A3 /* main.m in Sources */,
 				631982B9171510F400E334A3 /* finderAppDelegatefinderAppDelegate.m in Sources */,
 				631983F81715182F00E334A3 /* AddObjects.m in Sources */,

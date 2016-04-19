@@ -40,7 +40,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <state key="normal" title="Button" image="sonar_ico.png"/>
                         <connections>
-                            <action selector="FindKeyPressedEvent:" destination="ffy-WK-oo3" eventType="touchUpOutside" id="mEq-Ep-Zki"/>
+                            <action selector="radarButtonEvent:" destination="ffy-WK-oo3" eventType="touchUpInside" id="41C-7x-X07"/>
                         </connections>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="U2o-IC-ERg">
@@ -64,9 +64,6 @@
                         <state key="highlighted">
                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </state>
-                        <connections>
-                            <action selector="FindKeyPressedEvent:" destination="ffy-WK-oo3" eventType="touchUpInside" id="98T-B2-8Vg"/>
-                        </connections>
                     </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>

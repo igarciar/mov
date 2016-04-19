@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "blePeripheral.h"
+#import "Finder.h"
 
 @class blePeripheral;
 @interface cell : UITableViewCell
@@ -23,9 +24,11 @@
 @property (strong, nonatomic) IBOutlet UIImageView *antilostWorkImageView;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *onOffBUttons;
 - (IBAction)FindKeyPressedEvent:(UIButton *)sender;
+- (IBAction)radarButtonEvent:(UIButton *)sender;
 
 // Property
 @property (nonatomic) blePeripheral *currentPeripheral;
+@property (nonatomic) Finder *parent;
 -(void)refreshCurrentShow;
 
 @end
