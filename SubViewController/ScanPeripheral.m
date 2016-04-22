@@ -193,7 +193,7 @@
     Byte *macByte = (Byte *)[macData bytes];
     cell.textLabel.text = ap.name;
     cell.textLabel.textColor=[UIColor whiteColor];
-    cell.detailTextLabel.text = [[NSString alloc]initWithFormat:@"Havir-%02x-%02x-%02x-%02x-%02x-%02x", macByte[0], macByte[1], macByte[2], macByte[3], macByte[4], macByte[5]];
+    cell.detailTextLabel.text = [[NSString alloc]initWithFormat:@"Magalie Security -%02x-%02x", macByte[0], macByte[1]];
     
     cell.detailTextLabel.textColor=[UIColor whiteColor];
     return cell;

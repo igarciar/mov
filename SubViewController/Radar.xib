@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Radar">
             <connections>
-                <outlet property="distanciaActual" destination="PtD-MR-LBd" id="QIX-vE-4GW"/>
+                <outlet property="barra" destination="taJ-LB-hhb" id="URo-K9-KZP"/>
                 <outlet property="distanciaAviso" destination="Fdp-bU-5cm" id="4CB-71-WiJ"/>
-                <outlet property="tituloPersonalizar" destination="Iso-qx-thM" id="2WY-WZ-0cE"/>
+                <outlet property="radar" destination="IYK-9Z-3GH" id="O58-HK-96A"/>
+                <outlet property="tituloPersonalizar" destination="Iso-qx-thM" id="nUE-wx-kP5"/>
+                <outlet property="view" destination="iN0-l3-epB" id="KLU-fk-BlQ"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -17,61 +19,51 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="524"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_with_text.png" id="zkH-9c-Epf">
+                    <rect key="frame" x="112" y="24" width="95" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
                 <view contentMode="scaleToFill" id="adx-Xa-U6K">
-                    <rect key="frame" x="8" y="90" width="304" height="424"/>
+                    <rect key="frame" x="8" y="88" width="304" height="372"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <view contentMode="scaleToFill" id="DC8-pA-n1U">
-                            <rect key="frame" x="1" y="1" width="302" height="422"/>
+                            <rect key="frame" x="1" y="1" width="302" height="370"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radar.png" id="IYK-9Z-3GH">
-                                    <rect key="frame" x="26" y="53" width="250" height="232"/>
+                                    <rect key="frame" x="26" y="32" width="250" height="236"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alcance Máximo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wdT-Si-00d">
+                                    <rect key="frame" x="7" y="269" width="288" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barra.png" id="taJ-LB-hhb">
+                                    <rect key="frame" x="7" y="291" width="287" height="37"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distancia de aviso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VAM-gV-7Z5">
+                                    <rect key="frame" x="8" y="331" width="286" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" progressImage="fAzul.png" trackImage="fBlanco.png" id="Fdp-bU-5cm">
-                                    <rect key="frame" x="8" y="398" width="286" height="20"/>
+                                    <rect key="frame" x="8" y="352" width="286" height="20"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                     <color key="tintColor" red="0.5" green="0.0085340779819999997" blue="0.1296043938" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="progressTintColor" red="0.5" green="0.0085340779819999997" blue="0.1296043938" alpha="1" colorSpace="calibratedRGB"/>
                                 </progressView>
-                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" progressImage="fAzul.png" trackImage="fBlanco.png" id="PtD-MR-LBd">
-                                    <rect key="frame" x="8" y="332" width="286" height="29"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </progressView>
-                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="aJe-wf-m9v">
-                                    <rect key="frame" x="8" y="332" width="287" height="29"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                    <segments>
-                                        <segment title="5 m"/>
-                                        <segment title="10 m"/>
-                                        <segment title="20 m"/>
-                                        <segment title="30 m"/>
-                                        <segment title="40 m"/>
-                                        <segment title="50 m"/>
-                                    </segments>
-                                    <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                </segmentedControl>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distancia de aviso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VAM-gV-7Z5">
-                                    <rect key="frame" x="8" y="379" width="286" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Iso-qx-thM">
-                                    <rect key="frame" x="8" y="18" width="286" height="27"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <rect key="frame" x="8" y="2" width="286" height="27"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alcance Máximo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wdT-Si-00d">
-                                    <rect key="frame" x="7" y="313" width="288" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
@@ -80,17 +72,14 @@
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_with_text.png" id="zkH-9c-Epf">
-                    <rect key="frame" x="113" y="24" width="95" height="55"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
             </subviews>
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedToolbarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
-            <point key="canvasLocation" x="737" y="443"/>
+            <point key="canvasLocation" x="748" y="437"/>
         </view>
     </objects>
     <resources>
+        <image name="barra.png" width="1395" height="172"/>
         <image name="fAzul.png" width="200" height="20"/>
         <image name="fBlanco.png" width="200" height="20"/>
         <image name="logo_with_text.png" width="487" height="327"/>

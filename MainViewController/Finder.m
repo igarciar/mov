@@ -217,14 +217,14 @@
     NSString *CellIdentifier = @"CellTableIdentifier";
     
     UINib *nib ;
-    if(blead.ble.blePeripheralArray.count>1){
-    nib=[UINib nibWithNibName:@"cell" bundle:nil];
-        tableView.rowHeight=120;
-    }
-    else{
+    //if(blead.ble.blePeripheralArray.count>1){
+  //  nib=[UINib nibWithNibName:@"cell" bundle:nil];
+  //      tableView.rowHeight=120;
+  //  }
+  //  else{
         tableView.rowHeight=370;
         nib=[UINib nibWithNibName:@"cell2" bundle:nil];
-    }
+  //  }
     [tableView registerNib:nib forCellReuseIdentifier:CellIdentifier];
     cell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     cell.backgroundColor=[UIColor blackColor];

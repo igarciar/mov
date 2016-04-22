@@ -611,7 +611,7 @@
 -(UIView *)firstViewCell   //第一个cell中的数据
 {
     
-    self.tituloPersonalizar.text = [[NSString alloc]initWithFormat:@"%@ %@",NSLocalizedString(@"CUSTOMBLELABEL", nil),_currentPeripheral.nameString];
+    self.tituloPersonalizar.text = [[NSString alloc]initWithFormat:@"%@",NSLocalizedString(@"CUSTOMBLELABEL", nil)];
     
  
    
@@ -621,7 +621,7 @@
     {
         [self.imagen setBackgroundImage:_currentPeripheral.choosePicture forState:UIControlStateNormal];
     }else {
-        [self.imagen setBackgroundImage:[UIImage imageNamed:@"icon77@2x.png"] forState:UIControlStateNormal];
+        [self.imagen setBackgroundImage:[UIImage imageNamed:@"bolso_amarillo.png"] forState:UIControlStateNormal];
     }
     
     [self.imagen addTarget:self action:@selector(chooseImageButtonEvent:) forControlEvents:UIControlEventTouchUpInside];

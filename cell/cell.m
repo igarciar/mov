@@ -216,7 +216,8 @@
     //    [AddObjects ViewControllerTransition:self presentModalVC:svc duration:DurationTime withTyte:kCATransitionPush andSubtype:kCATransitionFromTop];
     //[self setHidesBottomBarWhenPushed:YES];
     UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStyleBordered target:nil action:nil];
-    [self.parent  presentViewController: svc animated:NO completion:nil];
+    //[self.parent  presentViewController: svc animated:NO completion:nil];
+    [self.parent.navigationController pushViewController:svc animated:YES];
 
 }
 

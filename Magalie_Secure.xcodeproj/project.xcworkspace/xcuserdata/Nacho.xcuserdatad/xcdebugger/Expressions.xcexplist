@@ -9,10 +9,10 @@
                value = "cell.detailTextLabel.text">
             </PersistentString>
             <PersistentString
-               value = "indexPath.row">
+               value = "self.valoresFAQreponse[row]">
             </PersistentString>
             <PersistentString
-               value = "self.valoresFAQreponse[row]">
+               value = "indexPath.row">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -26,6 +26,37 @@
       </ContextState>
       <ContextState
          contextName = "-[SetupProperty tableView:cellForRowAtIndexPath:]:SetupProperty.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[Radar viewDidLoad]:Radar.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "1.0/90.0*_currentPeripheral.toggleAlarmValue">
+            </PersistentString>
+            <PersistentString
+               value = "(float)1/90*_currentPeripheral.toggleAlarmValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[Radar CBTxRssi]:Radar.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "progressValue">
+            </PersistentString>
+            <PersistentString
+               value = "self.alcance.numberOfSegments*10*(progressValue+0.0000000001)">
+            </PersistentString>
+            <PersistentString
+               value = "self.alcance.numberOfSegments*10">
+            </PersistentString>
+            <PersistentString
+               value = "progressValue+0.0000000001">
+            </PersistentString>
+            <PersistentString
+               value = "self.alcance.numberOfSegments">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "-[SetupProperty CBTxRssi]:SetupProperty.m">

@@ -40,7 +40,11 @@
 
 @property (weak, nonatomic) IBOutlet UIProgressView *distanciaActual;
 @property (weak, nonatomic) IBOutlet UIProgressView *distanciaAviso;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *alcance;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alto;
 
+@property (weak, nonatomic) IBOutlet UIImageView *radar;
+@property (weak, nonatomic) IBOutlet UIImageView *barra;
 
 @end

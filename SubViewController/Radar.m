@@ -72,11 +72,14 @@
     [self loadNavigationViews];
     _backProgress = self.distanciaActual;
     
+    [self.distanciaAviso setProgress:1.0/90.0*_currentPeripheral.toggleAlarmValue];
+    
     nCBSelectImage
     nCBPeripheralStateChange
     nCBTxRssi
-
+    
     [self setCurrentPeripheral:_currentPeripheral];
+    self.tituloPersonalizar.text=_currentPeripheral.nameString;
 
 }
 -(void)viewWillAppear:(BOOL)animated
@@ -195,10 +198,12 @@
     }
     svc.currentPeripheral = _currentPeripheral;
 //    [AddObjects ViewControllerTransition:self presentModalVC:svc duration:DurationTime withTyte:kCATransitionPush andSubtype:kCATransitionFromTop];
+/*
     [self setHidesBottomBarWhenPushed:YES];
     self.navigationController.navigationBarHidden=NO;
     [self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
     [self.navigationController pushViewController:svc animated:YES];
+ */
 }
 - (IBAction)chooseRingToneButtonEvent:(UIButton *)sender {
     [self alarmSoundButton];
@@ -293,6 +298,44 @@
     _backProgress.progress = progressValue;
     
     // 设定显示进度条颜色
+    int result=17*(progressValue+0.0000000001);
+    //imagen de radar
+    switch (result) {
+        case 5:
+            [self.radar setImage:[UIImage imageNamed:@"radar6.png"]];
+            [self.barra setImage:[UIImage imageNamed:@"barra6.png"]];
+            break;
+        case 4:
+            [self.radar setImage:[UIImage imageNamed:@"radar5.png"]];
+            [self.barra setImage:[UIImage imageNamed:@"barra5.png"]];
+            break;
+        case 3:
+            [self.radar setImage:[UIImage imageNamed:@"radar4.png"]];
+            [self.barra setImage:[UIImage imageNamed:@"barra4.png"]];
+            break;
+        case 2:
+            [self.radar setImage:[UIImage imageNamed:@"radar3.png"]];
+            [self.barra setImage:[UIImage imageNamed:@"barra3.png"]];
+            break;
+        case 1:
+            [self.radar setImage:[UIImage imageNamed:@"radar2.png"]];
+            [self.barra setImage:[UIImage imageNamed:@"barra2.png"]];
+            break;
+        case 0:
+            [self.radar setImage:[UIImage imageNamed:@"radar1.png"]];
+            [self.barra setImage:[UIImage imageNamed:@"barra1.png"]];
+            break;
+            
+        default:
+            [self.radar setImage:[UIImage imageNamed:@"radar.png"]];
+            [self.barra setImage:[UIImage imageNamed:@"barra.png"]];
+            break;
+    }
+
+    
+   
+ /*
+    
     if (_currentPeripheral.TxFilteringValue <= kStopAlarmRxRssi) {
         [_backProgress setProgressTintColor:[UIColor greenColor]];
     }
@@ -305,6 +348,7 @@
     {
         [_backProgress setProgressTintColor:[UIColor redColor]];
     }
+    */
     
     NSLog(@"progressValue:%f currentPeripheral.TxFilteringValue:%d  _currentPeripheral.toggleAlarmValue:%d ",progressValue, _currentPeripheral.TxFilteringValue,_currentPeripheral.toggleAlarmValue);
 }
