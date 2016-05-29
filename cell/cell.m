@@ -42,7 +42,6 @@
 - (IBAction)enabelAntilostWorkEvent:(UISegmentedControl *)sender {
     
     BOOL state=sender.selectedSegmentIndex==0;
-    _currentPeripheral.cv.alarmSoundState=state;
 
     [_currentPeripheral setEnabelAlarmTimer:state];
     [_currentPeripheral setEnabelAntilostWork:state];
