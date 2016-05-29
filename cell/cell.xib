@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -27,19 +27,6 @@
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="85">
-                        <rect key="frame" x="180" y="0.0" width="138" height="126.5"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                        <inset key="contentEdgeInsets" minX="1" minY="1" maxX="1" maxY="1"/>
-                        <state key="normal" image="bolso_amarillo.png">
-                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
-                        </state>
-                        <state key="highlighted">
-                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </state>
-                    </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="lrc-U0-6lL">
                         <rect key="frame" x="34" y="86" width="25" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -69,11 +56,14 @@
                             <action selector="FindKeyPressedEvent:" destination="36" eventType="touchUpOutside" id="7IK-63-wMe"/>
                         </connections>
                     </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="C2B-CX-ja7">
+                        <rect key="frame" x="123" y="2" width="195" height="125"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             </tableViewCellContentView>
             <connections>
-                <outlet property="FindKeyButton" destination="85" id="86"/>
                 <outlet property="NameLabel" destination="74" id="77"/>
                 <outlet property="OnOffAntilostLabel" destination="75" id="79"/>
                 <outlet property="onOffBUttons" destination="Kp9-uC-vXB" id="s44-SO-j3j"/>
@@ -83,7 +73,6 @@
         <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="os2-Nw-qbe"/>
     </objects>
     <resources>
-        <image name="bolso_amarillo.png" width="801" height="661"/>
         <image name="sonar_ico.png" width="180" height="180"/>
         <image name="speaker_ico.png" width="180" height="180"/>
     </resources>

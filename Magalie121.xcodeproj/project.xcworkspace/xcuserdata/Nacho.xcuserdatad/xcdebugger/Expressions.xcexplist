@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[Setting tableView:cellForRowAtIndexPath:]:Setting.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "cell.detailTextLabel.text">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "self.valoresFAQreponse[row]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SetupProperty tableView:cellForRowAtIndexPath:]:SetupProperty.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[Radar CBTxRssi]:Radar.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.alcance.numberOfSegments*10*(progressValue+0.0000000001)">
+            </PersistentString>
+            <PersistentString
+               value = "progressValue+0.0000000001">
+            </PersistentString>
+            <PersistentString
+               value = "self.alcance.numberOfSegments*10">
+            </PersistentString>
+            <PersistentString
+               value = "progressValue">
+            </PersistentString>
+            <PersistentString
+               value = "(int)(_currentPeripheral.TxFilteringValue/90.0*6.0)">
+            </PersistentString>
+            <PersistentString
+               value = "self.alcance.numberOfSegments">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[Radar viewDidLoad]:Radar.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "1.0/90.0*_currentPeripheral.toggleAlarmValue">
+            </PersistentString>
+            <PersistentString
+               value = "(float)1/90*_currentPeripheral.toggleAlarmValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SetupProperty CBTxRssi]:SetupProperty.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "kMaxSetResponseRssiValue">
+            </PersistentString>
+            <PersistentString
+               value = "kMinResponseRssiValue">
+            </PersistentString>
+            <PersistentString
+               value = "(_currentPeripheral.TxFilteringValue - kMinResponseRssiValue)">
+            </PersistentString>
+            <PersistentString
+               value = "_currentPeripheral.TxFilteringValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SetupProperty viewDidLoad]:SetupProperty.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_currentPeripheral.enabelAntilostWork">
+            </PersistentString>
+            <PersistentString
+               value = "onOff.selectedSegmentIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SetupProperty firstViewCell]:SetupProperty.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

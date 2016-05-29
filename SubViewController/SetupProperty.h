@@ -37,6 +37,7 @@
 
 
 - (IBAction)finishButtonEvent:(UIButton *)sender;
+- (IBAction)finishButtonRemoveEvent:(UIButton *)sender;
 - (IBAction)chooseImageButtonEvent:(UIButton *)sender;
 - (IBAction)backgroundEvent:(id)sender;
 - (IBAction)enabelAntilostWorkEvent:(UISwitch *)sender;
@@ -49,6 +50,7 @@
 /////////////////////////////////////////////////////////
 //                       CUSTOM                        //
 /////////////////////////////////////////////////////////
+@property (nonatomic) NSUInteger index;
 
 @property (weak, nonatomic) IBOutlet UIView *contenedor;
 @property (weak, nonatomic) IBOutlet UILabel *tituloPersonalizar;

@@ -12,5 +12,9 @@
 
 @property (readwrite) IBOutlet UITableView *AntilostTableView;
 
+-(void)savePerifical;
+-(void)deletePerifical:(NSUInteger *) row;
+
+
 
 @end

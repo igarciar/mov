@@ -121,11 +121,13 @@
     nCBTxRssi
 
     [self setCurrentPeripheral:_currentPeripheral];
+    [self firstViewCell];
+    [self.onOff setSelectedSegmentIndex:_currentPeripheral.enabelAntilostWork?0:1];
 
 }
 -(void)viewWillAppear:(BOOL)animated
 {
-    [self setHidesBottomBarWhenPushed:YES];
+   // [self setHidesBottomBarWhenPushed:YES];
 }
 -(void)viewDidAppear:(BOOL)animated
 {
@@ -238,13 +240,22 @@
 #pragma
 #pragma 按键功能       
 //**************************************************//
+
+- (IBAction)finishButtonRemoveEvent:(UIButton *)sender{
+    [blead.ble disconnectPeripheralFromBlePeripheralArrayAtInteger:_index];
+    [blead.ble.blePeripheralArray removeObjectAtIndex:_index];
+    [blead.ble resetScanning];
+    [self finishButtonEvent:sender];
+
+  
+}
 - (IBAction)finishButtonEvent:(UIButton *)sender {
     [blead.ble SavePeripheralProperty];
     nFinishSetupProperty
     if (_backMainViewController == NO) {
         // 从Scan返回主界面
         [[NSNotificationCenter defaultCenter]postNotificationName:@"back" object:self];
-//        [self.navigationController popViewControllerAnimated:YES];
+        [self.navigationController popViewControllerAnimated:YES];
         nSetupPropertyFromScanPeripherialToFinder
     }
     else{
@@ -267,7 +278,7 @@
     }
     svc.currentPeripheral = _currentPeripheral;
 //    [AddObjects ViewControllerTransition:self presentModalVC:svc duration:DurationTime withTyte:kCATransitionPush andSubtype:kCATransitionFromTop];
-    [self setHidesBottomBarWhenPushed:YES];
+    //[self setHidesBottomBarWhenPushed:YES];
     self.navigationController.navigationBarHidden=NO;
     [self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
     [self.navigationController pushViewController:svc animated:YES];
@@ -937,8 +948,11 @@
 - (IBAction)enabelAntilostWorkEventSegmentedControl:(UISegmentedControl *)sender {
     
     BOOL state=sender.selectedSegmentIndex==0;
-    [_currentPeripheral setEnabelAntilostWork:state];
+    _currentPeripheral.cv.alarmSoundState=state;
+    _currentPeripheral.cv.AntilostPoweOn=state;
     [_currentPeripheral setEnabelAlarmTimer:state];
+    [_currentPeripheral setEnabelAntilostWork:state];
+    
     NSLog(@"setEnabelAlarmTimer.on:%d",state);
     
 }

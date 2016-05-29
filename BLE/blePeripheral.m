@@ -131,7 +131,7 @@ NSString *kAntilostRNBatteryCharateristicUUID           = @"FE25";
     // Property
     _macData                    = nil;
     _uuidString                 = nil;
-    _choosePicture              = [UIImage imageNamed:@"icon77@2x.png"];
+    _choosePicture              = [UIImage imageNamed:@"bolso_amarillo.png"];
     
 //    if ([[[[NSUserDefaults standardUserDefaults] objectForKey:@"AppleLanguages"] objectAtIndex:0] containsString:@"zh-Han"])  {
 //        // 中文

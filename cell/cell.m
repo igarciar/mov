@@ -42,11 +42,17 @@
 - (IBAction)enabelAntilostWorkEvent:(UISegmentedControl *)sender {
     
     BOOL state=sender.selectedSegmentIndex==0;
-    [_currentPeripheral setEnabelAntilostWork:state];
+    _currentPeripheral.cv.alarmSoundState=state;
+
     [_currentPeripheral setEnabelAlarmTimer:state];
+    [_currentPeripheral setEnabelAntilostWork:state];
+    
+    [_parent savePerifical];
+    
     NSLog(@"setEnabelAlarmTimer.on:%d",state);
     
 }
+
 
 - (IBAction)FindKeyPressedEvent:(UIButton *)sender {
     if (_currentPeripheral.enabelFlashLabel == YES) {
@@ -175,9 +181,9 @@
 
     
     if (_currentPeripheral.choosePicture != nil) {
-        [_FindKeyButton setImage:_currentPeripheral.choosePicture forState:UIControlStateNormal];
+        [_imagen2 setImage:_currentPeripheral.choosePicture];
     }else{
-        [_FindKeyButton setImage:[UIImage imageNamed:@"bolso_amarillo.png"] forState:UIControlStateNormal];
+        [_imagen2 setImage:[UIImage imageNamed:@"bolso_amarillo.png"]];
     }
     
     if (_currentPeripheral.enabelFlashLabel == YES) {
@@ -191,6 +197,9 @@
             _NameLabel.hidden = NO;
         }
     }
+    
+
+   
 }
 
 -(void)flashFindkeyEvent{

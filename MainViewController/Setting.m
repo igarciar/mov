@@ -33,6 +33,7 @@
     if (self) {
         // Custom initialization
     }
+    
     return self;
 }
 
@@ -49,6 +50,21 @@
     blead = [[UIApplication sharedApplication]delegate];
     // [self setHidesBottomBarWhenPushed:NO];
     [self.navigationController setNavigationBarHidden:YES];
+    NSString *urlAddress = @"http://www.magalie121.com";
+    NSURL *url = [NSURL URLWithString:urlAddress];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [_web loadRequest:requestObj];
+    
+ 
+
+    
+    
+}
+-(void)viewWillAppear:(BOOL)animated{
+    [blead.tabBar setSelectedIndex:0];
+    [super viewDidUnload];
+    
+    [self openWeb ];
     
 }
 -(void)viewWillDisappear:(BOOL)animated
@@ -282,10 +298,11 @@
     */
 }
 
+
 -(void) openWeb
 {
     // 按键打开网站
-    NSString* urlText = [NSString stringWithFormat:@"http://www.szIgnacio Garcia.com/"];
+    NSString* urlText = [NSString stringWithFormat:@"http://www.magalie121.com/"];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlText]];
 }
 -(void)contactDeveloper

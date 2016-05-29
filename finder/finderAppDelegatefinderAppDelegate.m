@@ -92,6 +92,10 @@
     _tabBar.tabBar.barTintColor=[UIColor blackColor];
     _tabBar.tabBar.tintColor=[UIColor whiteColor];
     
+    
+    
+    
+    
   //  _tabBar.viewControllers = [NSArray arrayWithObjects:_fvcNavigation, _svcNavifation,_addNavifation,_infoNavifation,nil];
     _tabBar.viewControllers = [NSArray arrayWithObjects:_fvcNavigation,_addNavifation,_infoNavifation,nil];
     

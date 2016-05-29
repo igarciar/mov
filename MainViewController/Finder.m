@@ -60,7 +60,7 @@
     
     NSLog(@"%0.0f",self.navigationController.navigationBar.frame.size.height);
     self.navigationController.navigationBar.hidden=true;
-    _AntilostTableView.frame=CGRectMake(0,100,[UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height-100-100);
+    //_AntilostTableView.frame=CGRectMake(0,100,[UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height-100-100);
     _AntilostTableView.layer.borderWidth = 1.0;
     _AntilostTableView.layer.borderColor = [UIColor whiteColor].CGColor;
     
@@ -68,6 +68,7 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [_AntilostTableView reloadData];
+    
     nCBCentralStateChange
     nCBFinishSetupProperty
     nCBPeripheralStateChange
@@ -266,6 +267,13 @@
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }
 }
+-(void)savePerifical{
+    [blead.ble SavePeripheralProperty];
+}
+-(void)deletePerifical: (NSUInteger) row {
+    idx  = row;
+    [self deleteBLEPeripheral];
+}
 
 -(void)deleteBLEPeripheral{
     [deleteTimer invalidate];
@@ -305,6 +313,7 @@
     [self.navigationItem setBackBarButtonItem:backItem];
     //[AddObjects setViewTransition:self.navigationController.view duration:DurationTime withTyte:@"cube" andSubtype:kCATransitionFromRight];
     [self.navigationController pushViewController:svc animated:YES];
+    [svc setIndex: indexPath.row];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 

@@ -10,6 +10,7 @@
 #import <MessageUI/MessageUI.h>
 
 @interface Setting : UIViewController<MFMailComposeViewControllerDelegate,UITableViewDataSource,UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UIWebView *web;
 
 @property (nonatomic, strong) IBOutlet UITableView *listView;
 @property (nonatomic, strong) NSArray *aboutArray,*sharArray,*valoresFAQ,*valoresFAQreponse;

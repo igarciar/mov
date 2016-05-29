@@ -72,7 +72,7 @@
     [self loadNavigationViews];
     _backProgress = self.distanciaActual;
     
-    [self.distanciaAviso setProgress:1.0/90.0*_currentPeripheral.toggleAlarmValue];
+    [self.distanciaAviso setProgress:1.8/90.0*_currentPeripheral.toggleAlarmValue];
     
     nCBSelectImage
     nCBPeripheralStateChange
@@ -297,8 +297,11 @@
     }
     _backProgress.progress = progressValue;
     
+    [self.distanciaActual setProgress:progressValue];
+    
     // 设定显示进度条颜色
-    int result=17*(progressValue+0.0000000001);
+    int result=(int)(_currentPeripheral.TxFilteringValue/70.0*6.0)-2;
+    NSLog(@"result  %d",result );
     //imagen de radar
     switch (result) {
         case 5:

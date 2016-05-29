@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Radar">
             <connections>
                 <outlet property="barra" destination="taJ-LB-hhb" id="URo-K9-KZP"/>
+                <outlet property="distanciaActual" destination="Tji-Fd-qK2" id="huj-6n-EAg"/>
                 <outlet property="distanciaAviso" destination="Fdp-bU-5cm" id="4CB-71-WiJ"/>
                 <outlet property="radar" destination="IYK-9Z-3GH" id="O58-HK-96A"/>
                 <outlet property="tituloPersonalizar" destination="Iso-qx-thM" id="nUE-wx-kP5"/>
@@ -35,14 +36,14 @@
                                     <rect key="frame" x="26" y="32" width="250" height="236"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alcance Máximo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wdT-Si-00d">
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distancia Baliza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wdT-Si-00d">
                                     <rect key="frame" x="7" y="269" width="288" height="21"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barra.png" id="taJ-LB-hhb">
+                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barra.png" id="taJ-LB-hhb">
                                     <rect key="frame" x="7" y="291" width="287" height="37"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 </imageView>
@@ -66,6 +67,12 @@
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" progressImage="fAzul.png" trackImage="fBlanco.png" id="Tji-Fd-qK2">
+                                    <rect key="frame" x="9" y="298" width="286" height="20"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                    <color key="tintColor" red="0.5" green="0.0085340779819999997" blue="0.1296043938" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="progressTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </progressView>
                             </subviews>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </view>
