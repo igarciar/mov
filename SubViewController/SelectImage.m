@@ -48,14 +48,14 @@
     
     nCBSelectImageFromImages
     [self CBSelectImageFromImages];
-    self.navigationController.navigationBarHidden=NO;
-    [self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
+    self.navigationController.navigationBarHidden=YES;
+    [self.navigationController.navigationBar setBarTintColor:[UIColor clearColor]];
 }
 
 - (void)viewDidUnload
 {
-    self.navigationController.navigationBarHidden=YES;
-    [self.navigationController.navigationBar setBarTintColor:[UIColor clearColor]];
+    self.navigationController.navigationBarHidden=NO;
+    [self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
     _currentPeripheral = nil;
     [self setChooseImageView:nil];
     [self setIncludedButton:nil];
@@ -99,6 +99,8 @@
 
 - (IBAction)backButtonEvent:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES  completion:nil];
+    self.navigationController.navigationBarHidden=NO;
+    [self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
     nSelectImage
 }
 
