@@ -122,7 +122,7 @@
 
     [self setCurrentPeripheral:_currentPeripheral];
     [self firstViewCell];
-    [self.onOff setSelectedSegmentIndex:_currentPeripheral.enabelAntilostWork?0:1];
+    [self.onOff setSelectedSegmentIndex:_currentPeripheral.enabelAlarmTimer?0:1];
 
 }
 -(void)viewWillAppear:(BOOL)animated

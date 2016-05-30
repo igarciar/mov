@@ -36,6 +36,7 @@
 }
 
 -(void)refreshCurrentShow {
+    [self.onOffBUttons setSelectedSegmentIndex:_currentPeripheral.enabelAlarmTimer?0:1];
     [self CBCentralStateChange];
 }
 
