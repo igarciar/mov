@@ -214,9 +214,11 @@
             // 3.5寸
             svc = [[SetupProperty alloc]initWithNibName:@"SetupProperty" bundle:nil];
         }
+        
         [blead.ble addNewConnectPeripheralToBlePeripheralArrayFromScanPeripheralArrayAtInteger:indexPath.row];
         svc.currentPeripheral = [blead.ble.blePeripheralArray objectAtIndex:0];
         svc.backMainViewController = NO;
+        svc.guardado=NO;
         [self autoStopScanEvent];
         //NSLog(@"svc.currentPeripheral:%@",svc.currentPeripheral);
         // 连接当前设备

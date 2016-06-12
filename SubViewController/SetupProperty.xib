@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="distanciaActual" destination="zJL-Oc-qPH" id="fva-T3-XTk"/>
                 <outlet property="distanciaAviso" destination="rkY-zx-u5h" id="np3-9t-3ZQ"/>
+                <outlet property="guardar" destination="GmD-g4-UJF" id="pru-cb-pyZ"/>
                 <outlet property="hideKeyBoradBtn" destination="123" id="126"/>
                 <outlet property="imagen" destination="baQ-h5-ApO" id="SYi-Su-Y5s"/>
                 <outlet property="listView" destination="119" id="120"/>
@@ -117,7 +118,7 @@
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </button>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.5" green="0.0085340779819999997" blue="0.1296043938" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tono de alarma:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="drK-jv-7Gh">
                                     <rect key="frame" x="8" y="276" width="154" height="30"/>

@@ -266,7 +266,7 @@ NSString *kAntilostRNBatteryCharateristicUUID           = @"FE25";
             else{
                 // 开始扫描服务
                 for (CBService *services in peripheral.services){
-                    NSLog(@"发现服务UUID: %@\r\n", services.UUID);
+                    NSLog(@"servicioUUID: %@\r\n", services.UUID);
                     //===================== AntiLost ========================FE20
                     if ([[services UUID] isEqual:[CBUUID UUIDWithString:kAntilostServiceUUID]]){
                         // 扫描服务特征值UUID
@@ -321,7 +321,7 @@ NSString *kAntilostRNBatteryCharateristicUUID           = @"FE25";
 
 // 更新特征值
 - (void)peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error{
-    NSLog(@"%@",characteristic.value);
+    NSLog(@"characteristic: %@",characteristic.value);
     if ([error code] == 0) {
         if ([peripheral isEqual:_activePeripheral]){
             //===================== AntiLost ========================FE21、FE22、FE23、FE24、FE25

@@ -77,6 +77,7 @@
         self.listView.backgroundColor=[UIColor blackColor];
         
     }
+    self.guardado=YES;
     return self;
 }
 
@@ -203,6 +204,7 @@
 //    }
 //    else{
         // English
+    
         self.title  = NSLocalizedString(@"SETUP PROPERTY", nil);
         finishStr = NSLocalizedString(@"finishStr", nil);
         recordString = NSLocalizedString(@"recordString", nil);
@@ -250,25 +252,27 @@
   
 }
 - (IBAction)finishButtonEvent:(UIButton *)sender {
-    @try {
-        [blead.ble SavePeripheralProperty];
-    } @catch (NSException *exception) {
-        NSLog(@"error guardar: %@ ",exception);
-    } @finally {
-        
-    
-        nFinishSetupProperty
-    if (_backMainViewController == NO) {
-        // 从Scan返回主界面
-        [[NSNotificationCenter defaultCenter]postNotificationName:@"back" object:self];
-        [self.navigationController popViewControllerAnimated:YES];
-        nSetupPropertyFromScanPeripherialToFinder
-    }
-    else{
-        // 直接返回主界面
-          [[NSNotificationCenter defaultCenter]postNotificationName:@"back" object:self];
-//        [self.navigationController popViewControllerAnimated:YES];
-    }
+    if(self.guardado){
+        @try {
+            [blead.ble SavePeripheralProperty];
+        } @catch (NSException *exception) {
+            NSLog(@"error guardar: %@ ",exception);
+        } @finally {
+            
+            
+            nFinishSetupProperty
+            if (_backMainViewController == NO) {
+                // 从Scan返回主界面
+                [[NSNotificationCenter defaultCenter]postNotificationName:@"back" object:self];
+                [self.navigationController popViewControllerAnimated:YES];
+                nSetupPropertyFromScanPeripherialToFinder
+            }
+            else{
+                // 直接返回主界面
+                [[NSNotificationCenter defaultCenter]postNotificationName:@"back" object:self];
+                //        [self.navigationController popViewControllerAnimated:YES];
+            }
+        }
     }
 }
 
@@ -336,6 +340,7 @@
 }
 
 -(void)setCurrentPeripheral:(blePeripheral *)CP{
+   
     _currentPeripheral = CP;
     if (_currentPeripheral != nil) {
         [self CBSelectImage];
@@ -630,9 +635,7 @@
 {
     
     self.tituloPersonalizar.text = [[NSString alloc]initWithFormat:@"%@",NSLocalizedString(@"CUSTOMBLELABEL", nil)];
-    self.imagenVIEW = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bolso_amarillo.png"]];
    
- 
    
     [[self.imagen imageView] setContentMode: UIViewContentModeScaleAspectFit];
     
