@@ -21,7 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
+   
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 //     Override point for customization after application launch.
     [UIApplication sharedApplication].applicationIconBadgeNumber=0;
@@ -47,12 +47,25 @@
         screenType = Screen35;
     }
     screenType = Screen40;
+    
+    //comprovar activacion
+    if([self activado]){
     // 添加TabBar
     [self addTabBar];
     
     self.window.backgroundColor = [UIColor whiteColor]; //白色背景
-    [self.window makeKeyAndVisible]; 
-     
+    [self.window makeKeyAndVisible];
+    }else{
+        _codepage= [[CodePage alloc] initWithNibName:@"codepage" bundle:nil];
+        
+        
+    
+    }
+    
+    
+    return YES;
+}
+-(BOOL) activado{
     return YES;
 }
 

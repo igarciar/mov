@@ -55,6 +55,7 @@
 @property (weak, nonatomic) IBOutlet UIView *contenedor;
 @property (weak, nonatomic) IBOutlet UILabel *tituloPersonalizar;
 @property (weak, nonatomic) IBOutlet UIButton *imagen;
+@property (weak, nonatomic) IBOutlet UIImageView *imagenVIEW;
 @property (weak, nonatomic) IBOutlet UITextField *nombre;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *onOff;
 

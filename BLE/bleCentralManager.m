@@ -171,7 +171,25 @@
                 // 比较mac数据、如果相同则为直接连设备
                 checkout = YES;
                 bp.activePeripheral = peripheral;
-                //NSLog(@"发现已绑定蓝牙设备:%@", bp.nameString);
+                NSLog(@"bp.nameString:%@", bp.nameString);
+                [self connectPeripheral:bp.activePeripheral];
+                break;
+            }
+        }
+    }
+    return checkout;
+}
+-(BOOL)checkPeripheralFromPeripheralPropertStroedArray:(CBPeripheral*)peripheral withUUID:(NSUUID*)data{
+    BOOL checkout = NO;
+    if (blePeripheralArray.count >0) {
+        for (NSUInteger idx=0; idx<blePeripheralArray.count; idx++) {
+            // 从存储号数组中
+            blePeripheral *bp = [blePeripheralArray objectAtIndex:idx];
+            if ([bp.uuidString isEqual:data.UUIDString]) {
+                // 比较mac数据、如果相同则为直接连设备
+                checkout = YES;
+                bp.activePeripheral = peripheral;
+                NSLog(@"bp.nameString:%@", bp.nameString);
                 [self connectPeripheral:bp.activePeripheral];
                 break;
             }
@@ -285,13 +303,14 @@
     if ([activeCentralManager isEqual:central]) {
         NSData *macData = [advertisementData objectForKey:CBAdvertisementDataManufacturerDataKey];
         NSLog(@"macData:%@",macData);
+        NSLog(@"UUID:%@",peripheral.identifier);
         if (![macDataBack isEqualToData:macData]) {
             macDataBack = macData;
             
             Byte rssi = -[RSSI charValue];
             
             if (rssi<85) {
-                BOOL checkout = [self checkPeripheralFromPeripheralPropertStroedArray:peripheral withmacData:macData];
+                BOOL checkout = [self checkPeripheralFromPeripheralPropertStroedArray:peripheral withUUID:peripheral.identifier];
                 // 不是已存储设备
                 if (checkout == NO) {
                     // 未存储则添加到扫描列表

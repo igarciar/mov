@@ -18,6 +18,7 @@
 #import "SetupProperty.h"
 #import "Perifericos.h"
 #import "ScanPeripheral.h"
+#import "CodePage.h"
 
 
 @class finderViewController;
@@ -32,6 +33,7 @@
 @property (strong, nonatomic) Perifericos *svc;
 @property (strong, nonatomic) ScanPeripheral *add;
 @property (strong, nonatomic) Setting *info;
+@property (strong, nonatomic) CodePage *codepage;
 
 @property (strong, nonatomic) bleCentralManager *ble;
 @property (readonly)          bool screenType;

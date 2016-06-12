@@ -623,10 +623,11 @@
 {
     
     self.tituloPersonalizar.text = [[NSString alloc]initWithFormat:@"%@",NSLocalizedString(@"CUSTOMBLELABEL", nil)];
-    
+    self.imagenVIEW = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bolso_amarillo.png"]];
+   
  
    
-    
+    [[self.imagen imageView] setContentMode: UIViewContentModeScaleAspectFit];
     
     if(_currentPeripheral.choosePicture != NULL)
     {

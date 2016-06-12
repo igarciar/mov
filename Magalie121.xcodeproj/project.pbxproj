@@ -79,7 +79,6 @@
 		631983EC171517DA00E334A3 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 631983E3171517DA00E334A3 /* Social.framework */; };
 		631983F81715182F00E334A3 /* AddObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 631983F71715182F00E334A3 /* AddObjects.m */; };
 		631983FD1715184B00E334A3 /* cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 631983FA1715184B00E334A3 /* cell.m */; };
-		631983FE1715184B00E334A3 /* cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 631983FB1715184B00E334A3 /* cell.xib */; };
 		63198418171518B600E334A3 /* Setting.m in Sources */ = {isa = PBXBuildFile; fileRef = 6319840A171518B600E334A3 /* Setting.m */; };
 		63198419171518B600E334A3 /* Setting.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6319840B171518B600E334A3 /* Setting.xib */; };
 		6319841C171518B600E334A3 /* Finder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6319840E171518B600E334A3 /* Finder.m */; };
@@ -145,6 +144,10 @@
 		63C745A317645BDC00F53392 /* introduce.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C745A017645BDC00F53392 /* introduce.m */; };
 		63C745A417645BDC00F53392 /* introduce35.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C745A117645BDC00F53392 /* introduce35.xib */; };
 		63C745A517645BDC00F53392 /* introduce40.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C745A217645BDC00F53392 /* introduce40.xib */; };
+		662CB25A1D06035F00814312 /* codepage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 662CB2591D06035F00814312 /* codepage.xib */; };
+		662CB25C1D0604FC00814312 /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = 662CB25B1D0604FC00814312 /* code.png */; };
+		662CB25E1D06055E00814312 /* flecha 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 662CB25D1D06055E00814312 /* flecha 120.png */; };
+		662CB2611D06060600814312 /* CodePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 662CB2601D06060600814312 /* CodePage.m */; };
 		66320A261CC69EFF00B6726A /* radar.png in Resources */ = {isa = PBXBuildFile; fileRef = 66320A251CC69EFF00B6726A /* radar.png */; };
 		66320A2A1CC6AA2E00B6726A /* fAzul.png in Resources */ = {isa = PBXBuildFile; fileRef = 66320A271CC6AA2E00B6726A /* fAzul.png */; };
 		66320A2B1CC6AA2E00B6726A /* fRojo.png in Resources */ = {isa = PBXBuildFile; fileRef = 66320A281CC6AA2E00B6726A /* fRojo.png */; };
@@ -176,6 +179,7 @@
 		669F44AC1CCA472300BC9C85 /* barra4.png in Resources */ = {isa = PBXBuildFile; fileRef = 669F44A51CCA472300BC9C85 /* barra4.png */; };
 		669F44AD1CCA472300BC9C85 /* barra5.png in Resources */ = {isa = PBXBuildFile; fileRef = 669F44A61CCA472300BC9C85 /* barra5.png */; };
 		669F44AE1CCA472300BC9C85 /* barra6.png in Resources */ = {isa = PBXBuildFile; fileRef = 669F44A71CCA472300BC9C85 /* barra6.png */; };
+		66BAC5571D0C37B800B2A905 /* cell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66BAC5561D0C37B800B2A905 /* cell.xib */; };
 		66E3B0BD1CA72F160098E31D /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 66E3B0BC1CA72F160098E31D /* launch.png */; };
 		66E3B0C11CA73E660098E31D /* launch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66E3B0C01CA73E660098E31D /* launch.xib */; };
 		66E3B0C51CB141880098E31D /* icon57@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 66E3B0C31CB141880098E31D /* icon57@2x.png */; };
@@ -265,7 +269,6 @@
 		631983F61715182F00E334A3 /* AddObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddObjects.h; path = AddObjects/AddObjects.h; sourceTree = SOURCE_ROOT; };
 		631983F71715182F00E334A3 /* AddObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddObjects.m; path = AddObjects/AddObjects.m; sourceTree = SOURCE_ROOT; };
 		631983FA1715184B00E334A3 /* cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cell.m; path = cell/cell.m; sourceTree = SOURCE_ROOT; };
-		631983FB1715184B00E334A3 /* cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = cell.xib; path = cell/cell.xib; sourceTree = SOURCE_ROOT; };
 		631983FC1715184B00E334A3 /* cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cell.h; path = cell/cell.h; sourceTree = SOURCE_ROOT; };
 		6319840A171518B600E334A3 /* Setting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Setting.m; path = MainViewController/Setting.m; sourceTree = SOURCE_ROOT; };
 		6319840B171518B600E334A3 /* Setting.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Setting.xib; path = MainViewController/Setting.xib; sourceTree = SOURCE_ROOT; };
@@ -345,6 +348,11 @@
 		63C745A017645BDC00F53392 /* introduce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = introduce.m; path = SubViewController/introduce.m; sourceTree = SOURCE_ROOT; };
 		63C745A117645BDC00F53392 /* introduce35.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = introduce35.xib; path = SubViewController/introduce35.xib; sourceTree = SOURCE_ROOT; };
 		63C745A217645BDC00F53392 /* introduce40.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = introduce40.xib; path = SubViewController/introduce40.xib; sourceTree = SOURCE_ROOT; };
+		662CB2591D06035F00814312 /* codepage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = codepage.xib; sourceTree = "<group>"; };
+		662CB25B1D0604FC00814312 /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code.png; sourceTree = "<group>"; };
+		662CB25D1D06055E00814312 /* flecha 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flecha 120.png"; sourceTree = "<group>"; };
+		662CB25F1D06060600814312 /* CodePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodePage.h; sourceTree = "<group>"; };
+		662CB2601D06060600814312 /* CodePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodePage.m; sourceTree = "<group>"; };
 		66320A251CC69EFF00B6726A /* radar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radar.png; sourceTree = "<group>"; };
 		66320A271CC6AA2E00B6726A /* fAzul.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fAzul.png; sourceTree = "<group>"; };
 		66320A281CC6AA2E00B6726A /* fRojo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fRojo.png; sourceTree = "<group>"; };
@@ -358,15 +366,6 @@
 		6667D2B51CA14D3300473D52 /* speaker_ico.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speaker_ico.png; sourceTree = "<group>"; };
 		6667D2B71CA14DCB00473D52 /* bolso_amarillo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bolso_amarillo.png; sourceTree = "<group>"; };
 		6667D2B91CA14E4E00473D52 /* cell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cell2.xib; sourceTree = "<group>"; };
-		666846951CFB42BB00772CCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		666846971CFB42BB00772CCF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		666846981CFB42BB00772CCF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6668469A1CFB42BB00772CCF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6668469B1CFB42BB00772CCF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		6668469E1CFB42BB00772CCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		666846A01CFB42BB00772CCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		666846A31CFB42BB00772CCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		666846A51CFB42BB00772CCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		666846A91CFB480D00772CCF /* delete 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete 120.png"; sourceTree = "<group>"; };
 		666846AB1CFB496200772CCF /* candado 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "candado 120.png"; sourceTree = "<group>"; };
 		6689F8F71CA72C0C00229ABF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = finder_fukang/Images.xcassets; sourceTree = "<group>"; };
@@ -386,6 +385,7 @@
 		669F44A51CCA472300BC9C85 /* barra4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barra4.png; sourceTree = "<group>"; };
 		669F44A61CCA472300BC9C85 /* barra5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barra5.png; sourceTree = "<group>"; };
 		669F44A71CCA472300BC9C85 /* barra6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barra6.png; sourceTree = "<group>"; };
+		66BAC5561D0C37B800B2A905 /* cell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cell.xib; sourceTree = "<group>"; };
 		66E3B0BC1CA72F160098E31D /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		66E3B0C01CA73E660098E31D /* launch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = launch.xib; sourceTree = "<group>"; };
 		66E3B0C31CB141880098E31D /* icon57@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon57@2x.png"; sourceTree = "<group>"; };
@@ -440,7 +440,6 @@
 				66E3B0C01CA73E660098E31D /* launch.xib */,
 				6689F8F71CA72C0C00229ABF /* Images.xcassets */,
 				631982AE171510F400E334A3 /* finder */,
-				666846931CFB42BB00772CCF /* MAGALIE_SECURITY */,
 				631982A7171510F400E334A3 /* Frameworks */,
 				631982A6171510F400E334A3 /* Products */,
 			);
@@ -501,7 +500,9 @@
 		631982D71715160200E334A3 /* PNG */ = {
 			isa = PBXGroup;
 			children = (
+				662CB25B1D0604FC00814312 /* code.png */,
 				666846A91CFB480D00772CCF /* delete 120.png */,
+				662CB25D1D06055E00814312 /* flecha 120.png */,
 				669F44A11CCA472300BC9C85 /* barra.png */,
 				669F44A21CCA472300BC9C85 /* barra1.png */,
 				669F44A31CCA472300BC9C85 /* barra2.png */,
@@ -686,7 +687,7 @@
 				631983FC1715184B00E334A3 /* cell.h */,
 				631983FA1715184B00E334A3 /* cell.m */,
 				6667D2B91CA14E4E00473D52 /* cell2.xib */,
-				631983FB1715184B00E334A3 /* cell.xib */,
+				66BAC5561D0C37B800B2A905 /* cell.xib */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -720,6 +721,9 @@
 				6319840A171518B600E334A3 /* Setting.m */,
 				6319840B171518B600E334A3 /* Setting.xib */,
 				63198414171518B600E334A3 /* Setting@568.xib */,
+				662CB2591D06035F00814312 /* codepage.xib */,
+				662CB25F1D06060600814312 /* CodePage.h */,
+				662CB2601D06060600814312 /* CodePage.m */,
 			);
 			name = MainViewController;
 			sourceTree = "<group>";
@@ -819,30 +823,6 @@
 			name = viewButton;
 			sourceTree = "<group>";
 		};
-		666846931CFB42BB00772CCF /* MAGALIE_SECURITY */ = {
-			isa = PBXGroup;
-			children = (
-				666846971CFB42BB00772CCF /* AppDelegate.h */,
-				666846981CFB42BB00772CCF /* AppDelegate.m */,
-				6668469A1CFB42BB00772CCF /* ViewController.h */,
-				6668469B1CFB42BB00772CCF /* ViewController.m */,
-				6668469D1CFB42BB00772CCF /* Main.storyboard */,
-				666846A01CFB42BB00772CCF /* Assets.xcassets */,
-				666846A21CFB42BB00772CCF /* LaunchScreen.storyboard */,
-				666846A51CFB42BB00772CCF /* Info.plist */,
-				666846941CFB42BB00772CCF /* Supporting Files */,
-			);
-			path = MAGALIE_SECURITY;
-			sourceTree = "<group>";
-		};
-		666846941CFB42BB00772CCF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				666846951CFB42BB00772CCF /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -932,6 +912,7 @@
 				6319836F1715175E00E334A3 /* music02.mp3 in Resources */,
 				631983701715175E00E334A3 /* music03.mp3 in Resources */,
 				631983711715175E00E334A3 /* music04.mp3 in Resources */,
+				66BAC5571D0C37B800B2A905 /* cell.xib in Resources */,
 				631983721715175E00E334A3 /* Orange.mp3 in Resources */,
 				631983731715175E00E334A3 /* Simple_World.mp3 in Resources */,
 				631983741715175E00E334A3 /* Third_Eye.mp3 in Resources */,
@@ -961,6 +942,7 @@
 				631983B81715177700E334A3 /* Rssi2.png in Resources */,
 				631983B91715177700E334A3 /* Rssi3.png in Resources */,
 				669F44A81CCA472300BC9C85 /* barra.png in Resources */,
+				662CB25C1D0604FC00814312 /* code.png in Resources */,
 				66320A2B1CC6AA2E00B6726A /* fRojo.png in Resources */,
 				631983BA1715177700E334A3 /* Rssi4.png in Resources */,
 				631983BD1715177700E334A3 /* vibrate.png in Resources */,
@@ -972,7 +954,6 @@
 				631983D41715177700E334A3 /* Setting.png in Resources */,
 				631983D51715177700E334A3 /* RemoveRegion.png in Resources */,
 				631983D61715177700E334A3 /* RemoveRegion@2x.png in Resources */,
-				631983FE1715184B00E334A3 /* cell.xib in Resources */,
 				63198419171518B600E334A3 /* Setting.xib in Resources */,
 				52A4D82218067D7500B0D4B3 /* Finder.xib in Resources */,
 				6319841F171518B600E334A3 /* Setting@568.xib in Resources */,
@@ -1031,6 +1012,8 @@
 				6373F7C0183CBA4E003E0F80 /* purse.png in Resources */,
 				6373F7C1183CBA4E003E0F80 /* suitcase.png in Resources */,
 				636649E21859AB58001B2550 /* introduce1_CN.png in Resources */,
+				662CB25A1D06035F00814312 /* codepage.xib in Resources */,
+				662CB25E1D06055E00814312 /* flecha 120.png in Resources */,
 				636649E31859AB58001B2550 /* introduce1_EN.png in Resources */,
 				6694AC461CC6B97C001F1DED /* Radar.xib in Resources */,
 				636649E41859AB58001B2550 /* introduce2_CN.png in Resources */,
@@ -1064,6 +1047,7 @@
 				631982B9171510F400E334A3 /* finderAppDelegatefinderAppDelegate.m in Sources */,
 				631983F81715182F00E334A3 /* AddObjects.m in Sources */,
 				631983FD1715184B00E334A3 /* cell.m in Sources */,
+				662CB2611D06060600814312 /* CodePage.m in Sources */,
 				63198418171518B600E334A3 /* Setting.m in Sources */,
 				6319841C171518B600E334A3 /* Finder.m in Sources */,
 				631984A21715193800E334A3 /* ScanPeripheral.m in Sources */,
@@ -1103,22 +1087,6 @@
 				BECE88071BFAE72E00CD3017 /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6668469D1CFB42BB00772CCF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6668469E1CFB42BB00772CCF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		666846A21CFB42BB00772CCF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				666846A31CFB42BB00772CCF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		BECE87FF1BFAE5F600CD3017 /* Localizable.strings */ = {

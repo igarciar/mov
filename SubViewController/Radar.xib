@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -9,7 +9,6 @@
             <connections>
                 <outlet property="barra" destination="taJ-LB-hhb" id="URo-K9-KZP"/>
                 <outlet property="distanciaActual" destination="Tji-Fd-qK2" id="huj-6n-EAg"/>
-                <outlet property="distanciaAviso" destination="Fdp-bU-5cm" id="4CB-71-WiJ"/>
                 <outlet property="radar" destination="IYK-9Z-3GH" id="O58-HK-96A"/>
                 <outlet property="tituloPersonalizar" destination="Iso-qx-thM" id="nUE-wx-kP5"/>
                 <outlet property="view" destination="iN0-l3-epB" id="KLU-fk-BlQ"/>
@@ -28,35 +27,22 @@
                             <rect key="frame" x="1" y="1" width="302" height="370"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radar.png" id="IYK-9Z-3GH">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="radar.png" id="IYK-9Z-3GH">
                                     <rect key="frame" x="26" y="32" width="250" height="236"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distancia Baliza" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wdT-Si-00d">
-                                    <rect key="frame" x="7" y="269" width="288" height="21"/>
+                                    <rect key="frame" x="7" y="291" width="288" height="21"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="barra.png" id="taJ-LB-hhb">
-                                    <rect key="frame" x="7" y="291" width="287" height="37"/>
+                                    <rect key="frame" x="7" y="313" width="287" height="37"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distancia de aviso" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VAM-gV-7Z5">
-                                    <rect key="frame" x="8" y="331" width="286" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
-                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" progressImage="fAzul.png" trackImage="fBlanco.png" id="Fdp-bU-5cm">
-                                    <rect key="frame" x="8" y="352" width="286" height="20"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                    <color key="tintColor" red="0.5" green="0.0085340779819999997" blue="0.1296043938" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="progressTintColor" red="0.5" green="0.0085340779819999997" blue="0.1296043938" alpha="1" colorSpace="calibratedRGB"/>
-                                </progressView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Iso-qx-thM">
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Iso-qx-thM">
                                     <rect key="frame" x="8" y="2" width="286" height="27"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
@@ -64,7 +50,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" progressImage="fAzul.png" trackImage="fBlanco.png" id="Tji-Fd-qK2">
-                                    <rect key="frame" x="9" y="298" width="286" height="20"/>
+                                    <rect key="frame" x="9" y="320" width="286" height="20"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                     <color key="tintColor" red="0.5" green="0.0085340779819999997" blue="0.1296043938" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="progressTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -76,7 +62,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_with_text.png" id="zkH-9c-Epf">
-                    <rect key="frame" x="115" y="17" width="90" height="55"/>
+                    <rect key="frame" x="123" y="26" width="75" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>

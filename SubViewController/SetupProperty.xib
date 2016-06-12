@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -25,7 +25,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" id="9mo-Q4-t1z">
-                    <rect key="frame" x="3" y="61" width="315" height="351"/>
+                    <rect key="frame" x="3" y="74" width="315" height="351"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <subviews>
                         <view contentMode="scaleToFill" id="DPm-f8-gdV">
@@ -84,11 +84,6 @@
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </view>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="baQ-h5-ApO">
-                                    <rect key="frame" x="2" y="86" width="160" height="107"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tnn-BO-W2r">
                                     <rect key="frame" x="157" y="276" width="138" height="30"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -99,6 +94,31 @@
                                         <action selector="chooseRingToneButtonEvent:" destination="-1" eventType="touchUpInside" id="gdF-ZO-X4I"/>
                                     </connections>
                                 </button>
+                                <view contentMode="scaleToFill" id="hq7-Kc-yPC">
+                                    <rect key="frame" x="2" y="85" width="309" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <segmentedControl contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bordered" selectedSegmentIndex="0" id="Spc-5e-iQU">
+                                            <rect key="frame" x="186" y="50" width="110" height="29"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <segments>
+                                                <segment title=" ON"/>
+                                                <segment title="OFF"/>
+                                            </segments>
+                                            <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="enabelAntilostWorkEventSegmentedControl:" destination="-1" eventType="valueChanged" id="PhI-d2-wnH"/>
+                                            </connections>
+                                        </segmentedControl>
+                                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="baQ-h5-ApO">
+                                            <rect key="frame" x="8" y="10" width="170" height="107"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.5" green="0.0085340779819999997" blue="0.1296043938" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tono de alarma:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="drK-jv-7Gh">
                                     <rect key="frame" x="8" y="276" width="154" height="30"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -133,19 +153,6 @@
                                         <action selector="finishButtonRemoveEvent:" destination="-1" eventType="touchUpInside" id="21O-5h-frp"/>
                                     </connections>
                                 </button>
-                                <segmentedControl contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bordered" selectedSegmentIndex="0" id="Spc-5e-iQU">
-                                    <rect key="frame" x="185" y="114" width="110" height="29"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    <segments>
-                                        <segment title=" ON"/>
-                                        <segment title="OFF"/>
-                                    </segments>
-                                    <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                    <connections>
-                                        <action selector="enabelAntilostWorkEventSegmentedControl:" destination="-1" eventType="valueChanged" id="PhI-d2-wnH"/>
-                                    </connections>
-                                </segmentedControl>
                             </subviews>
                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </view>
@@ -153,7 +160,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_with_text.png" id="djX-mL-lNx">
-                    <rect key="frame" x="127" y="14" width="66" height="39"/>
+                    <rect key="frame" x="123" y="26" width="75" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
             </subviews>

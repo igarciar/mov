@@ -3,13 +3,40 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[Radar viewDidLoad]:Radar.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "1.0/90.0*_currentPeripheral.toggleAlarmValue">
+            </PersistentString>
+            <PersistentString
+               value = "(float)1/90*_currentPeripheral.toggleAlarmValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SetupProperty firstViewCell]:SetupProperty.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[Finder tableView:cellForRowAtIndexPath:]:Finder.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "blead.ble.blePeripheralArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[Setting tableView:cellForRowAtIndexPath:]:Setting.m">
          <PersistentStrings>
             <PersistentString
-               value = "self.valoresFAQreponse[row]">
+               value = "indexPath.row">
             </PersistentString>
             <PersistentString
-               value = "indexPath.row">
+               value = "self.valoresFAQreponse[row]">
             </PersistentString>
             <PersistentString
                value = "cell.detailTextLabel.text">
@@ -17,7 +44,26 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "__28-[finderAppDelegate activar]_block_invoke:finderAppDelegatefinderAppDelegate.m">
+      </ContextState>
+      <ContextState
          contextName = "-[SetupProperty tableView:cellForRowAtIndexPath:]:SetupProperty.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[cell refreshCurrentShow]:cell.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_currentPeripheral.enabelAlarmTimer">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[finderAppDelegate application:didFinishLaunchingWithOptions:]:finderAppDelegatefinderAppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[UIDevice currentDevice].model">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "-[Radar CBTxRssi]:Radar.m">
@@ -32,24 +78,35 @@
                value = "self.alcance.numberOfSegments*10">
             </PersistentString>
             <PersistentString
-               value = "self.alcance.numberOfSegments*10*(progressValue+0.0000000001)">
+               value = "progressValue">
             </PersistentString>
             <PersistentString
                value = "progressValue+0.0000000001">
             </PersistentString>
             <PersistentString
-               value = "progressValue">
+               value = "self.alcance.numberOfSegments*10*(progressValue+0.0000000001)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "-[Radar viewDidLoad]:Radar.m">
+         contextName = "-[SetupProperty viewDidLoad]:SetupProperty.m">
          <PersistentStrings>
             <PersistentString
-               value = "1.0/90.0*_currentPeripheral.toggleAlarmValue">
+               value = "_currentPeripheral.enabelAntilostWork">
             </PersistentString>
             <PersistentString
-               value = "(float)1/90*_currentPeripheral.toggleAlarmValue">
+               value = "onOff.selectedSegmentIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[bleCentralManager centralManager:didDiscoverPeripheral:advertisementData:RSSI:]:bleCentralManager.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "CBAdvertisementDataOverflowServiceUUIDsKey">
+            </PersistentString>
+            <PersistentString
+               value = "CBAdvertisementDataManufacturerDataKey">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -67,33 +124,6 @@
             </PersistentString>
             <PersistentString
                value = "_currentPeripheral.TxFilteringValue">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[cell refreshCurrentShow]:cell.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "_currentPeripheral.enabelAlarmTimer">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[SetupProperty viewDidLoad]:SetupProperty.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "_currentPeripheral.enabelAntilostWork">
-            </PersistentString>
-            <PersistentString
-               value = "onOff.selectedSegmentIndex">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "-[SetupProperty firstViewCell]:SetupProperty.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

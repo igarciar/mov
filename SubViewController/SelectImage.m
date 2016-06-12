@@ -116,7 +116,7 @@
     }
     svc.currentPeripheral = _currentPeripheral;
     [self.navigationController pushViewController:svc animated:YES];
-    //[AddObjects ViewControllerTransition:self presentModalVC:svc duration:DurationTime withTyte:kCATransitionPush andSubtype:kCATransitionFromRight];
+    [AddObjects ViewControllerTransition:self presentModalVC:svc duration:DurationTime withTyte:kCATransitionPush andSubtype:kCATransitionFromRight];
 }
 
 - (IBAction)selectFromCameraButtonEvent:(UIButton *)sender {
