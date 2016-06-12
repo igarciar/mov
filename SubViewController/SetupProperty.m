@@ -250,8 +250,14 @@
   
 }
 - (IBAction)finishButtonEvent:(UIButton *)sender {
-    [blead.ble SavePeripheralProperty];
-    nFinishSetupProperty
+    @try {
+        [blead.ble SavePeripheralProperty];
+    } @catch (NSException *exception) {
+        NSLog(@"error guardar: %@ ",exception);
+    } @finally {
+        
+    
+        nFinishSetupProperty
     if (_backMainViewController == NO) {
         // 从Scan返回主界面
         [[NSNotificationCenter defaultCenter]postNotificationName:@"back" object:self];
@@ -262,6 +268,7 @@
         // 直接返回主界面
           [[NSNotificationCenter defaultCenter]postNotificationName:@"back" object:self];
 //        [self.navigationController popViewControllerAnimated:YES];
+    }
     }
 }
 

@@ -86,31 +86,45 @@
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </view>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="67t-ZE-anZ">
-                                    <rect key="frame" x="2" y="105" width="149" height="107"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <connections>
-                                        <action selector="chooseImageButtonEvent:" destination="-1" eventType="touchUpInside" id="btO-a2-VJ2"/>
-                                    </connections>
-                                </button>
-                                <view contentMode="scaleToFill" id="fd6-ES-a7N">
-                                    <rect key="frame" x="153.5" y="105" width="146.5" height="102"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <view contentMode="scaleToFill" id="e1p-OJ-lAx">
+                                    <rect key="frame" x="2" y="105" width="297" height="113"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <segmentedControl contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bordered" selectedSegmentIndex="0" id="BQE-M8-Jq9">
-                                            <rect key="frame" x="20" y="42" width="106.5" height="29"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <segments>
-                                                <segment title=" ON"/>
-                                                <segment title="OFF"/>
-                                            </segments>
-                                            <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <connections>
-                                                <action selector="enabelAntilostWorkEventSegmentedControl:" destination="-1" eventType="valueChanged" id="F9o-tY-U1r"/>
-                                            </connections>
-                                        </segmentedControl>
+                                        <view contentMode="scaleToFill" id="fd6-ES-a7N">
+                                            <rect key="frame" x="150" y="8.5" width="146.5" height="97.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <segmentedControl contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="bordered" selectedSegmentIndex="0" id="BQE-M8-Jq9">
+                                                    <rect key="frame" x="20" y="35.5" width="106.5" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <segments>
+                                                        <segment title=" ON"/>
+                                                        <segment title="OFF"/>
+                                                    </segments>
+                                                    <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <action selector="enabelAntilostWorkEventSegmentedControl:" destination="-1" eventType="valueChanged" id="F9o-tY-U1r"/>
+                                                    </connections>
+                                                </segmentedControl>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" id="1b1-OK-Ci9">
+                                            <rect key="frame" x="0.0" y="8.5" width="156" height="97.5"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="67t-ZE-anZ">
+                                                    <rect key="frame" x="9" y="9.5" width="153" height="80"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <connections>
+                                                        <action selector="chooseImageButtonEvent:" destination="-1" eventType="touchUpInside" id="btO-a2-VJ2"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </view>
