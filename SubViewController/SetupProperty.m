@@ -128,7 +128,12 @@
 }
 -(void)viewWillAppear:(BOOL)animated
 {
-   // [self setHidesBottomBarWhenPushed:YES];
+   // [self setHidesBottomBarWhenPushed:NO];
+}
+-(void)viewWillDisappear:(BOOL)animated{
+
+    [super viewWillDisappear:animated];
+    
 }
 -(void)viewDidAppear:(BOOL)animated
 {
@@ -235,6 +240,7 @@
         [cellItemArray addObject:item4];
         
         recordLocaleStr = NSLocalizedString(@"recordLocaleStr", nil);
+      [self.tono setTitle:alarmSoundStr forState:UIControlStateNormal];
 //    }
 }
 
@@ -244,11 +250,19 @@
 //**************************************************//
 
 - (IBAction)finishButtonRemoveEvent:(UIButton *)sender{
-    [blead.ble disconnectPeripheralFromBlePeripheralArrayAtInteger:_index];
-    [blead.ble.blePeripheralArray removeObjectAtIndex:_index];
+    if(self.guardado){
+    blePeripheral *bp = [blead.ble.blePeripheralArray objectAtIndex:_index];
+    bp.cv.AntilostPoweOn = NO;
+    bp.cv.EnabelAntilostWork = NO;
+    bp.cv.alarmSoundState = kStopAlarmState;
+    [bp sendControlValueEvent];
+    [bp stopAlarm];
+    
+    [blead.fvc deletePerifical:_index];
+    
     [blead.ble resetScanning];
     [self finishButtonEvent:sender];
-
+    }
   
 }
 - (IBAction)finishButtonEvent:(UIButton *)sender {
@@ -273,6 +287,8 @@
                 //        [self.navigationController popViewControllerAnimated:YES];
             }
         }
+    }else{
+    [self.navigationController popViewControllerAnimated:YES];
     }
 }
 
@@ -293,6 +309,7 @@
     self.navigationController.navigationBarHidden=NO;
     [self.navigationController.navigationBar setBarTintColor:[UIColor blackColor]];
     [self.navigationController pushViewController:svc animated:YES];
+    
 }
 - (IBAction)chooseRingToneButtonEvent:(UIButton *)sender {
     [self alarmSoundButton];
@@ -309,7 +326,8 @@
         svc = [[SetRingtone alloc]initWithNibName:@"SetRingtone" bundle:nil];
     }
     svc.currentPeripheral = _currentPeripheral;
-    [self setHidesBottomBarWhenPushed:YES];
+    self.navigationController.navigationBarHidden=NO;
+    [self setHidesBottomBarWhenPushed:NO];
     [self.navigationController pushViewController:svc animated:YES];
   
 }
@@ -327,7 +345,7 @@
     svc.currentPeripheral = _currentPeripheral;
     //    [AddObjects ViewControllerTransition:self presentModalVC:svc duration:DurationTime withTyte:kCATransitionPush andSubtype:kCATransitionFromTop];
     
-    [self setHidesBottomBarWhenPushed:YES];
+    [self setHidesBottomBarWhenPushed:NO];
     [self.navigationController pushViewController:svc animated:YES];
 }
 - (IBAction)autosetButtonEvent:(UIButton *)sender {

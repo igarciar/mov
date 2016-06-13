@@ -22,10 +22,16 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "-[blePeripheral stopAlarm]:blePeripheral.m">
+      </ContextState>
+      <ContextState
          contextName = "-[Finder tableView:cellForRowAtIndexPath:]:Finder.m">
          <PersistentStrings>
             <PersistentString
                value = "blead.ble.blePeripheralArray">
+            </PersistentString>
+            <PersistentString
+               value = "tableView">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -33,13 +39,13 @@
          contextName = "-[Setting tableView:cellForRowAtIndexPath:]:Setting.m">
          <PersistentStrings>
             <PersistentString
+               value = "cell.detailTextLabel.text">
+            </PersistentString>
+            <PersistentString
                value = "indexPath.row">
             </PersistentString>
             <PersistentString
                value = "self.valoresFAQreponse[row]">
-            </PersistentString>
-            <PersistentString
-               value = "cell.detailTextLabel.text">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -69,10 +75,10 @@
          contextName = "-[Radar CBTxRssi]:Radar.m">
          <PersistentStrings>
             <PersistentString
-               value = "(int)(_currentPeripheral.TxFilteringValue/90.0*6.0)">
+               value = "progressValue+0.0000000001">
             </PersistentString>
             <PersistentString
-               value = "self.alcance.numberOfSegments">
+               value = "self.alcance.numberOfSegments*10*(progressValue+0.0000000001)">
             </PersistentString>
             <PersistentString
                value = "self.alcance.numberOfSegments*10">
@@ -81,10 +87,10 @@
                value = "progressValue">
             </PersistentString>
             <PersistentString
-               value = "progressValue+0.0000000001">
+               value = "(int)(_currentPeripheral.TxFilteringValue/90.0*6.0)">
             </PersistentString>
             <PersistentString
-               value = "self.alcance.numberOfSegments*10*(progressValue+0.0000000001)">
+               value = "self.alcance.numberOfSegments">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -96,6 +102,14 @@
             </PersistentString>
             <PersistentString
                value = "onOff.selectedSegmentIndex">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[Finder tableView:numberOfRowsInSection:]:Finder.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "blead.ble.blePeripheralArray.count">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -124,6 +138,14 @@
             </PersistentString>
             <PersistentString
                value = "_currentPeripheral.TxFilteringValue">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[Finder numberOfSectionsInTableView:]:Finder.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "blead.ble.blePeripheralArray.count&gt;2?1:2">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

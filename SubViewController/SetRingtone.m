@@ -82,7 +82,7 @@
 }
 
 - (void)viewDidUnload{
-    self.navigationController.navigationBarHidden=YES;
+    self.navigationController.navigationBarHidden=NO;
     [self.navigationController.navigationBar setBarTintColor:[UIColor clearColor]];
 }
 
@@ -174,9 +174,9 @@
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
     
     // 设置系统音量
-    if (SystemVolume != 1.0) {
-        SystemVolume = 1.0;
-    }
+  //  if (SystemVolume != 1.0) {
+  //      SystemVolume = 1.0;
+  //  }
     return aPlayer;
 }
 
