@@ -14,6 +14,7 @@
 //@synthesize rvc = _rvc;
 @synthesize svc = _svc;
 @synthesize info = _info;
+@synthesize codepage = _codepage;
 @synthesize add = _add;
 @synthesize ble;
 @synthesize screenType;
@@ -47,55 +48,69 @@
         screenType = Screen35;
     }
     screenType = Screen40;
-    
+     self.window.backgroundColor = [UIColor blackColor]; //白色背景
+    // 添加TabBar
     //comprovar activacion
     if([self activado]){
-    // 添加TabBar
-    [self addTabBar];
-    
-    self.window.backgroundColor = [UIColor whiteColor]; //白色背景
-    [self.window makeKeyAndVisible];
+        [self loadcontrols];
     }else{
+        
+        [self addTabBar];
         _codepage= [[CodePage alloc] initWithNibName:@"codepage" bundle:nil];
-        
-        
-    
+        [_codepage setParent:self];
+        [[_fvcNavigation navigationController] setNavigationBarHidden:YES animated:YES];
+       [_fvcNavigation pushViewController:_codepage animated:YES];
+    /*
+       UIWindow* window = [UIApplication sharedApplication].keyWindow;
+        self.window.rootViewController=_codepage;
+       
+       
+       [_codepage.view setFrame:self.window.frame];
+       [self.window addSubview:_codepage.view];
+      */
     }
-    
+    [self.window makeKeyAndVisible];
     
     return YES;
 }
 -(BOOL) activado{
-    return YES;
+
+    return [self displayContent];
+}
+-(void)loadcontrols{
+    [self writeToTextFile];
+    [self addTabBar];
+[_fvcNavigation pushViewController:_fvc animated:YES];
+_tabBar.viewControllers = [NSArray arrayWithObjects:_fvcNavigation,_addNavifation,_infoNavifation,nil];
+    [self.window makeKeyAndVisible];
+    
+   // exit(0);
+ 
+
 }
 
 -(void)addTabBar{
     _fvcNavigation = [UINavigationController new];
-   // _svcNavifation = [UINavigationController new];
     _addNavifation = [UINavigationController new];
     _infoNavifation = [UINavigationController new];
 
     if (screenType == YES) {
         _fvc = [[Finder alloc]initWithNibName:@"Finder@568" bundle:nil];
-     //   _svc = [[Perifericos alloc]initWithNibName:@"Perifericos" bundle:nil];
         _info = [[Setting alloc]initWithNibName:@"Setting@568" bundle:nil];
         _add= [[ScanPeripheral alloc]initWithNibName:@"ScanPeripheral@568" bundle:nil];
     }
     else{
         _fvc = [[Finder alloc]initWithNibName:@"Finder" bundle:nil];
-     //   _svc = [[Perifericos alloc]initWithNibName:@"Perifericos" bundle:nil];
         _info = [[Setting alloc]initWithNibName:@"Setting" bundle:nil];
         _add = [[ScanPeripheral alloc]initWithNibName:@"ScanPeripheral" bundle:nil];
     }
    
 
     _fvc.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"tabItem1", nil) image:[UIImage imageNamed:@"main_ico.png"] tag:0];
-//    _svc.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"tabItem2", nil) image:[UIImage imageNamed:@"personalizar_ico.png"] tag:1];
-    _add.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"tabItem3", nil) image:[UIImage imageNamed:@"add_ico_white.png"] tag:2];
-    _info.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"tabItem4", nil) image:[UIImage imageNamed:@"info_w.png"] tag:3];
+    _add.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"tabItem3", nil) image:[UIImage imageNamed:@"add_ico_white.png"] tag:1];
+    _info.tabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"tabItem4", nil) image:[UIImage imageNamed:@"info_w.png"] tag:2];
 //    }
-    [_fvcNavigation pushViewController:_fvc animated:YES];
-    [_svcNavifation pushViewController:_svc animated:YES];
+//    [_fvcNavigation pushViewController:_fvc animated:YES];
     [_addNavifation pushViewController:_add animated:YES];
     [_infoNavifation pushViewController:_info animated:YES];
     
@@ -109,8 +124,9 @@
     
     
     
-  //  _tabBar.viewControllers = [NSArray arrayWithObjects:_fvcNavigation, _svcNavifation,_addNavifation,_infoNavifation,nil];
-    _tabBar.viewControllers = [NSArray arrayWithObjects:_fvcNavigation,_addNavifation,_infoNavifation,nil];
+    //  _tabBar.viewControllers = [NSArray arrayWithObjects:_fvcNavigation, _svcNavifation,_addNavifation,_infoNavifation,nil];
+    
+    _tabBar.viewControllers = [NSArray arrayWithObjects:_fvcNavigation,nil];
     
    [self.window addSubview:_tabBar.view];
 //    NSLog(@"%.0f",_tabBar.tabBar.frame.size.height);
@@ -187,5 +203,52 @@
  */
     
 }
+
+
+//////////////////////////////
+//  SAVE FILE    ////
+NSString * nameFile=@"activacion.code";
+
+//Method writes a string to a text file
+
+-(void) writeToTextFile{
+    //get the documents directory:
+    NSString *path;
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    path = [[paths objectAtIndex:0] stringByAppendingPathComponent:nameFile];
+    NSError *error;
+    if (![[NSFileManager defaultManager] fileExistsAtPath:path])	//Does directory already exist?
+    {
+        if (![[NSFileManager defaultManager] createDirectoryAtPath:path
+                                       withIntermediateDirectories:NO
+                                                        attributes:nil
+                                                             error:&error])
+        {
+            NSLog(@"Create directory error: %@", error);
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No network connection"
+                                                            message:@"You must be connected to the internet to use this app."
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+            
+        }
+    }
+    
+}
+
+
+//Method retrieves content from documents directory and
+//displays it in an alert
+-(BOOL) displayContent{
+    NSString *path;
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    path = [[paths objectAtIndex:0] stringByAppendingPathComponent:nameFile];
+    if ([[NSFileManager defaultManager] fileExistsAtPath:path])
+    { return YES;}
+    return NO;
+    
+}
+
 
 @end

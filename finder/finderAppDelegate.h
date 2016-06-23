@@ -38,4 +38,5 @@
 @property (strong, nonatomic) bleCentralManager *ble;
 @property (readonly)          bool screenType;
 @property (strong, nonatomic) UINavigationController *fvcNavigation,*svcNavifation,*addNavifation,*infoNavifation;
+-(void)loadcontrols;
 @end

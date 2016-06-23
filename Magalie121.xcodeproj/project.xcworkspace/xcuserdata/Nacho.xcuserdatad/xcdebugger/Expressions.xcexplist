@@ -39,13 +39,13 @@
          contextName = "-[Setting tableView:cellForRowAtIndexPath:]:Setting.m">
          <PersistentStrings>
             <PersistentString
-               value = "cell.detailTextLabel.text">
+               value = "self.valoresFAQreponse[row]">
             </PersistentString>
             <PersistentString
                value = "indexPath.row">
             </PersistentString>
             <PersistentString
-               value = "self.valoresFAQreponse[row]">
+               value = "cell.detailTextLabel.text">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -67,6 +67,9 @@
          contextName = "-[finderAppDelegate application:didFinishLaunchingWithOptions:]:finderAppDelegatefinderAppDelegate.m">
          <PersistentStrings>
             <PersistentString
+               value = "[self displayContent]">
+            </PersistentString>
+            <PersistentString
                value = "[UIDevice currentDevice].model">
             </PersistentString>
          </PersistentStrings>
@@ -75,22 +78,22 @@
          contextName = "-[Radar CBTxRssi]:Radar.m">
          <PersistentStrings>
             <PersistentString
-               value = "progressValue+0.0000000001">
+               value = "(int)(_currentPeripheral.TxFilteringValue/90.0*6.0)">
             </PersistentString>
             <PersistentString
-               value = "self.alcance.numberOfSegments*10*(progressValue+0.0000000001)">
+               value = "self.alcance.numberOfSegments">
             </PersistentString>
             <PersistentString
                value = "self.alcance.numberOfSegments*10">
             </PersistentString>
             <PersistentString
+               value = "self.alcance.numberOfSegments*10*(progressValue+0.0000000001)">
+            </PersistentString>
+            <PersistentString
+               value = "progressValue+0.0000000001">
+            </PersistentString>
+            <PersistentString
                value = "progressValue">
-            </PersistentString>
-            <PersistentString
-               value = "(int)(_currentPeripheral.TxFilteringValue/90.0*6.0)">
-            </PersistentString>
-            <PersistentString
-               value = "self.alcance.numberOfSegments">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
