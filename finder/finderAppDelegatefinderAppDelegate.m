@@ -246,7 +246,7 @@ NSString * nameFile=@"activacion.code";
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     path = [[paths objectAtIndex:0] stringByAppendingPathComponent:nameFile];
     if ([[NSFileManager defaultManager] fileExistsAtPath:path])
-    { return NO;}
+    { return YES;}
     return NO;
     
 }

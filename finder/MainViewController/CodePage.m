@@ -7,6 +7,7 @@
 //
 
 #import "CodePage.h"
+#import "finderAppDelegate.h"
 
 @interface CodePage ()
 
@@ -40,7 +41,7 @@
  */
 
 - (IBAction)find:(id)sender {
-    
+    [self activar];
     
 }
 
@@ -50,9 +51,20 @@
  message = "";
  */
 -(void)activar{
-     NSString * url = @"http://www.magalie121.com/wp-codeactivation.php?code=444";
+    NSLog(@"%@",_codeField.text);
+     NSString * url = @"http://www.magalie121.com/wp-codeactivation.php?code=";
+    url=[url stringByAppendingString:_codeField.text];
     NSDictionary *data= [self reponseUrl: url];
-    NSLog(@"%@",data);
+     NSLog(@"%@",data);
+    int valor= [data objectForKey:@"activation"];
+    
+    if(valor==1)
+    {
+        [self writeToTextFile];
+        finderAppDelegate *appDelegate = (finderAppDelegate *)[[UIApplication sharedApplication] delegate];
+        [appDelegate loadcontrols];
+    }
+        
 }
 
 
@@ -69,5 +81,33 @@
 
 }
 
+//Method writes a string to a text file
+
+-(void) writeToTextFile{
+NSString * nameFile=@"activacion.code";
+    //get the documents directory:
+    NSString *path;
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    path = [[paths objectAtIndex:0] stringByAppendingPathComponent:nameFile];
+    NSError *error;
+    if (![[NSFileManager defaultManager] fileExistsAtPath:path])	//Does directory already exist?
+    {
+        if (![[NSFileManager defaultManager] createDirectoryAtPath:path
+                                       withIntermediateDirectories:NO
+                                                        attributes:nil
+                                                             error:&error])
+        {
+            NSLog(@"Create directory error: %@", error);
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No network connection"
+                                                            message:@"You must be connected to the internet to use this app."
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert show];
+            
+        }
+    }
+    
+}
 
 @end
