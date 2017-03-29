@@ -394,11 +394,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "finder/finderAppDelegatefinderAppDelegate.m"
-            timestampString = "488337504.48207"
+            timestampString = "512333664.400521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "-addTabBar"
             landmarkType = "5">
          </BreakpointContent>
@@ -762,11 +762,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "finder/finderAppDelegatefinderAppDelegate.m"
-            timestampString = "488337504.48207"
+            timestampString = "512333664.400521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "244"
-            endingLineNumber = "244"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
             landmarkName = "-displayContent"
             landmarkType = "5">
          </BreakpointContent>
@@ -778,11 +778,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "finder/finderAppDelegatefinderAppDelegate.m"
-            timestampString = "488337504.48207"
+            timestampString = "512333664.400521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "216"
-            endingLineNumber = "216"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
             landmarkName = "-writeToTextFile"
             landmarkType = "5">
          </BreakpointContent>
@@ -794,13 +794,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "finder/MainViewController/codePage.m"
-            timestampString = "488336425.819943"
+            timestampString = "512332051.500162"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "-activar"
-            landmarkType = "5">
+            startingLineNumber = "103"
+            endingLineNumber = "103">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -810,13 +808,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "finder/MainViewController/codePage.m"
-            timestampString = "488336425.819943"
+            timestampString = "512332051.500162"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "-activar"
-            landmarkType = "5">
+            startingLineNumber = "123"
+            endingLineNumber = "123">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -842,13 +838,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "finder/MainViewController/codePage.m"
-            timestampString = "488337372.128069"
+            timestampString = "512332051.500162"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
-            landmarkName = "-activar"
-            landmarkType = "5">
+            startingLineNumber = "134"
+            endingLineNumber = "134">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -858,11 +852,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "finder/finderAppDelegatefinderAppDelegate.m"
-            timestampString = "488337504.48207"
+            timestampString = "512333664.400521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "215"
-            endingLineNumber = "215"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
             landmarkName = "-writeToTextFile"
             landmarkType = "5">
          </BreakpointContent>
@@ -874,11 +868,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "finder/finderAppDelegatefinderAppDelegate.m"
-            timestampString = "488337504.48207"
+            timestampString = "512333664.400521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "247"
-            endingLineNumber = "247"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
             landmarkName = "-displayContent"
             landmarkType = "5">
          </BreakpointContent>
@@ -890,11 +884,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "finder/finderAppDelegatefinderAppDelegate.m"
-            timestampString = "488337504.48207"
+            timestampString = "512333664.400521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
             landmarkName = "-loadcontrols"
             landmarkType = "5">
          </BreakpointContent>
@@ -906,11 +900,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "finder/finderAppDelegatefinderAppDelegate.m"
-            timestampString = "488337504.48207"
+            timestampString = "512333664.400521"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "217"
-            endingLineNumber = "217"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
             landmarkName = "-writeToTextFile"
             landmarkType = "5">
          </BreakpointContent>
@@ -922,13 +916,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "finder/MainViewController/codePage.m"
-            timestampString = "488337372.128069"
+            timestampString = "512332051.500162"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "-activar"
-            landmarkType = "5">
+            startingLineNumber = "133"
+            endingLineNumber = "133">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

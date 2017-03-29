@@ -144,8 +144,9 @@
 		63C745A317645BDC00F53392 /* introduce.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C745A017645BDC00F53392 /* introduce.m */; };
 		63C745A417645BDC00F53392 /* introduce35.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C745A117645BDC00F53392 /* introduce35.xib */; };
 		63C745A517645BDC00F53392 /* introduce40.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63C745A217645BDC00F53392 /* introduce40.xib */; };
-		662872CD1D1850920053DF22 /* codePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 662872CB1D1850920053DF22 /* codePage.m */; };
-		662872D01D185A310053DF22 /* codepage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 662872CF1D185A310053DF22 /* codepage.xib */; };
+		66281F491E8989460025C708 /* CodePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 66281F481E8989460025C708 /* CodePage.m */; };
+		66281F4F1E8993AD0025C708 /* code.png in Resources */ = {isa = PBXBuildFile; fileRef = 66281F4E1E8993AD0025C708 /* code.png */; };
+		66281F571E89988B0025C708 /* codepage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66281F591E89988B0025C708 /* codepage.xib */; };
 		662872D31D185A440053DF22 /* code2.png in Resources */ = {isa = PBXBuildFile; fileRef = 662872D11D185A440053DF22 /* code2.png */; };
 		662872D41D185A440053DF22 /* code1.png in Resources */ = {isa = PBXBuildFile; fileRef = 662872D21D185A440053DF22 /* code1.png */; };
 		662CB25E1D06055E00814312 /* flecha 120.png in Resources */ = {isa = PBXBuildFile; fileRef = 662CB25D1D06055E00814312 /* flecha 120.png */; };
@@ -349,9 +350,10 @@
 		63C745A017645BDC00F53392 /* introduce.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = introduce.m; path = SubViewController/introduce.m; sourceTree = SOURCE_ROOT; };
 		63C745A117645BDC00F53392 /* introduce35.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = introduce35.xib; path = SubViewController/introduce35.xib; sourceTree = SOURCE_ROOT; };
 		63C745A217645BDC00F53392 /* introduce40.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = introduce40.xib; path = SubViewController/introduce40.xib; sourceTree = SOURCE_ROOT; };
-		662872CA1D1850920053DF22 /* CodePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CodePage.h; path = MainViewController/CodePage.h; sourceTree = "<group>"; };
-		662872CB1D1850920053DF22 /* codePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = codePage.m; path = MainViewController/codePage.m; sourceTree = "<group>"; };
-		662872CF1D185A310053DF22 /* codepage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = codepage.xib; path = MainViewController/codepage.xib; sourceTree = "<group>"; };
+		66281F471E8989460025C708 /* CodePage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CodePage.h; path = MainViewController/CodePage.h; sourceTree = "<group>"; };
+		66281F481E8989460025C708 /* CodePage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CodePage.m; path = MainViewController/CodePage.m; sourceTree = "<group>"; };
+		66281F4E1E8993AD0025C708 /* code.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code.png; sourceTree = "<group>"; };
+		66281F581E89988B0025C708 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/codepage.xib; sourceTree = "<group>"; };
 		662872D11D185A440053DF22 /* code2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code2.png; sourceTree = "<group>"; };
 		662872D21D185A440053DF22 /* code1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = code1.png; sourceTree = "<group>"; };
 		662CB25D1D06055E00814312 /* flecha 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flecha 120.png"; sourceTree = "<group>"; };
@@ -502,6 +504,7 @@
 		631982D71715160200E334A3 /* PNG */ = {
 			isa = PBXGroup;
 			children = (
+				66281F4E1E8993AD0025C708 /* code.png */,
 				662872D11D185A440053DF22 /* code2.png */,
 				662872D21D185A440053DF22 /* code1.png */,
 				666846A91CFB480D00772CCF /* delete 120.png */,
@@ -716,9 +719,6 @@
 		631984081715189A00E334A3 /* MainViewController */ = {
 			isa = PBXGroup;
 			children = (
-				662872CA1D1850920053DF22 /* CodePage.h */,
-				662872CB1D1850920053DF22 /* codePage.m */,
-				662872CF1D185A310053DF22 /* codepage.xib */,
 				63198413171518B600E334A3 /* Finder.h */,
 				6319840E171518B600E334A3 /* Finder.m */,
 				52A4D82418067D7500B0D4B3 /* Finder.xib */,
@@ -727,6 +727,9 @@
 				6319840A171518B600E334A3 /* Setting.m */,
 				6319840B171518B600E334A3 /* Setting.xib */,
 				63198414171518B600E334A3 /* Setting@568.xib */,
+				66281F471E8989460025C708 /* CodePage.h */,
+				66281F481E8989460025C708 /* CodePage.m */,
+				66281F591E89988B0025C708 /* codepage.xib */,
 			);
 			name = MainViewController;
 			sourceTree = "<group>";
@@ -951,10 +954,10 @@
 				631983C21715177700E334A3 /* background.png in Resources */,
 				631983D11715177700E334A3 /* PowerOff.png in Resources */,
 				66E3B0BD1CA72F160098E31D /* launch.png in Resources */,
-				662872D01D185A310053DF22 /* codepage.xib in Resources */,
 				662872D41D185A440053DF22 /* code1.png in Resources */,
 				631983D21715177700E334A3 /* PowerOn.png in Resources */,
 				669F44A01CCA37DF00BC9C85 /* radar6.png in Resources */,
+				66281F571E89988B0025C708 /* codepage.xib in Resources */,
 				631983D41715177700E334A3 /* Setting.png in Resources */,
 				631983D51715177700E334A3 /* RemoveRegion.png in Resources */,
 				631983D61715177700E334A3 /* RemoveRegion@2x.png in Resources */,
@@ -1008,6 +1011,7 @@
 				6373F7B9183CBA4E003E0F80 /* Bag.png in Resources */,
 				6373F7BA183CBA4E003E0F80 /* boy.png in Resources */,
 				6373F7BB183CBA4E003E0F80 /* briefcase.png in Resources */,
+				66281F4F1E8993AD0025C708 /* code.png in Resources */,
 				6373F7BC183CBA4E003E0F80 /* cat.png in Resources */,
 				6373F7BD183CBA4E003E0F80 /* dog.png in Resources */,
 				6373F7BE183CBA4E003E0F80 /* girl.png in Resources */,
@@ -1051,11 +1055,11 @@
 				631982B9171510F400E334A3 /* finderAppDelegatefinderAppDelegate.m in Sources */,
 				631983F81715182F00E334A3 /* AddObjects.m in Sources */,
 				631983FD1715184B00E334A3 /* cell.m in Sources */,
-				662872CD1D1850920053DF22 /* codePage.m in Sources */,
 				63198418171518B600E334A3 /* Setting.m in Sources */,
 				6319841C171518B600E334A3 /* Finder.m in Sources */,
 				631984A21715193800E334A3 /* ScanPeripheral.m in Sources */,
 				631984A81715193800E334A3 /* SelectImage.m in Sources */,
+				66281F491E8989460025C708 /* CodePage.m in Sources */,
 				631984AB1715193800E334A3 /* SelectImageFromImages.m in Sources */,
 				631984AE1715193800E334A3 /* SetRingtone.m in Sources */,
 				631984B41715193800E334A3 /* SetupKeyFunction.m in Sources */,
@@ -1091,6 +1095,15 @@
 				BECE88071BFAE72E00CD3017 /* zh-Hant */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		66281F591E89988B0025C708 /* codepage.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66281F581E89988B0025C708 /* en */,
+			);
+			name = codepage.xib;
+			path = MainViewController;
 			sourceTree = "<group>";
 		};
 		BECE87FF1BFAE5F600CD3017 /* Localizable.strings */ = {

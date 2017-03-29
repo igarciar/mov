@@ -57,7 +57,8 @@
         
         [self addTabBar];
         _codepage= [[CodePage alloc] initWithNibName:@"codepage" bundle:nil];
-        [_codepage setParent:self];
+        //[_codepage setParent:self];
+         self.window.rootViewController=_codepage;
         [[_fvcNavigation navigationController] setNavigationBarHidden:YES animated:YES];
        [_fvcNavigation pushViewController:_codepage animated:YES];
     /*
@@ -245,7 +246,7 @@ NSString * nameFile=@"activacion.code";
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     path = [[paths objectAtIndex:0] stringByAppendingPathComponent:nameFile];
     if ([[NSFileManager defaultManager] fileExistsAtPath:path])
-    { return YES;}
+    { return NO;}
     return NO;
     
 }
