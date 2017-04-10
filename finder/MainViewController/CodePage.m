@@ -64,6 +64,9 @@
         finderAppDelegate *appDelegate = (finderAppDelegate *)[[UIApplication sharedApplication] delegate];
         [appDelegate loadcontrols];
     }
+    else{
+    
+    }
         
 }
 
@@ -98,8 +101,8 @@ NSString * nameFile=@"activacion.code";
                                                              error:&error])
         {
             NSLog(@"Create directory error: %@", error);
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No network connection"
-                                                            message:@"You must be connected to the internet to use this app."
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"ERROR0ti", nil)
+                                                            message:NSLocalizedString(@"ERROR0", nil)
                                                            delegate:nil
                                                   cancelButtonTitle:@"OK"
                                                   otherButtonTitles:nil];
@@ -108,6 +111,27 @@ NSString * nameFile=@"activacion.code";
         }
     }
     
+}
+-(void) settingsFile{
+
+    NSFileManager * fileManager =[[NSFileManager alloc]init];
+    NSArray  * path=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    path = [[path objectAtIndex:0] stringByAppendingPathComponent:@"activacion.code"];
+    NSString *FilePath=[[path objectAtIndex:0] absoluteString];
+    NSString *TEST =[FilePath stringByAppendingPathComponent:@"vesrsion.json"];
+    BOOL flage =[[NSFileManager  defaultManager] fileExistsAtPath:TEST];
+    
+    if (flage)
+    {
+        NSLog(@"It's exist ");
+    }
+    else
+    {
+        NSLog(@"It is not here yet ");
+        NSData * data =[[NSData alloc]initWithContentsOfURL:[NSURL URLWithString:@"https://raw.githubusercontent.com/igarciar/testProyect/igarciar-patch-1/date.json"]];
+        [data writeToFile:TEST atomically:YES];
+    }
+
 }
 
 @end

@@ -28,8 +28,21 @@
     [UIApplication sharedApplication].applicationIconBadgeNumber=0;
     
     NSLog(@"--------=====%@",NSLocalizedString(@"InformationTitle", nil));
-    
+    NSData *data=[[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"https://raw.githubusercontent.com/igarciar/testProyect/igarciar-patch-1/status"]];
+    NSString *valor=[[NSString alloc] initWithData:data encoding:  NSUTF8StringEncoding];
+    NSLog(@"-%@-",valor);
+    if([valor isEqualToString: @"ok"])
+    {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No network connection"
+                                                        message:@"You must be connected to the internet to use this app."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+    [alert show];
+        exit(0);
+    }
     // 初始化蓝牙
+
     ble = [[bleCentralManager alloc]init];
     [ble ReadPeripheralProperty];
     
